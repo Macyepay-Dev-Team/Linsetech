@@ -4,7 +4,7 @@ import { getPosts, getProjects, getServices } from "@/sanity/data";
 import { absoluteUrl, languageAlternates, localizedPath } from "@/lib/seo";
 
 /** Every route of the [locale] tree (dynamic ones expanded below). */
-const PAGES = ["/", "/about", "/services", "/work", "/news", "/careers", "/support", "/contact", "/privacy", "/terms"];
+const PAGES = ["/", "/about", "/services", "/work", "/news", "/careers", "/support", "/contact", "/brand", "/privacy", "/terms"];
 
 /**
  * All routes in all three locales, each entry listing its language alternates (+ x-default). Slugs come from the

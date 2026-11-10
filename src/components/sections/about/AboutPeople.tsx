@@ -5,7 +5,7 @@ import DashedLine from "@/components/ui/DashedLine";
 import DarkGradient from "@/components/backdrop/DarkGradient";
 import DocList from "@/components/sections/company/DocList";
 import { leadership, team, certifications, documents, contacts } from "@/content/company";
-import { hardwareBrands, partnerBadges } from "@/content/hardware";
+import { hardwareBrands } from "@/content/hardware";
 import { site } from "@/content/site";
 import { cn } from "@/lib/cn";
 import TextReveal from "./TextReveal";
@@ -118,8 +118,6 @@ export default function AboutPeople() {
     setOpen(true);
   };
 
-  const platforms = partnerBadges.filter((b) => !/ISO|RDB/.test(b));
-
   return (
     <section className="relative z-[2] text-off-white">
       {/* blurb */}
@@ -212,8 +210,6 @@ export default function AboutPeople() {
             <p className="mb-10 max-w-[680px] text-[16px] font-medium leading-[1.35] text-[var(--black-subtle)] min-[800px]:mb-14 min-[800px]:pt-4 min-[800px]:text-[19px]">{t("partners.sub")}</p>
             <p className="eyebrow mb-4 text-[var(--black-subtle)]">{t("partners.brands")}</p>
             <NameCells names={hardwareBrands} />
-            <p className="eyebrow mb-4 mt-10 text-[var(--black-subtle)] min-[800px]:mt-14">{t("partners.platforms")}</p>
-            <NameCells names={platforms} />
             <p className="eyebrow mb-4 mt-10 text-[var(--black-subtle)] min-[800px]:mt-14">{t("partners.certs")}</p>
             <NameCells names={certifications.map((c) => t(`certifications.${c}`))} marker />
           </div>
@@ -222,7 +218,7 @@ export default function AboutPeople() {
         <Block>
           <SubTitle title={t("headings.documents")} count={documents.length} tone="light" />
           <div className={CONTENT}>
-            <DocList items={documents.map((d) => ({ id: d.id, chip: d.type, title: t(`documents.${d.id}`), file: { label: t("documents.download"), soon: t("documents.soon") } }))} />
+            <DocList items={documents.map((d) => ({ id: d.id, chip: d.type, title: t(`documents.${d.id}`), file: { href: d.href ?? undefined, label: t("documents.download"), soon: t("documents.soon") } }))} />
           </div>
         </Block>
 

@@ -63,7 +63,7 @@ export const services: Service[] = [
       { value: "0", label: "Lost records in migrations" },
       { value: "24/7", label: "Monitoring" },
     ],
-    related: ["clinic-hmis", "macyepay"],
+    related: ["macyepay"],
     faqs: [
       { q: "Do you work with government systems?", a: "Yes, including IremboGov, RRA and mobile-money APIs, within their compliance requirements." },
       { q: "Can you take over a system someone else built?", a: "Yes. We start with an audit, stabilise what is in production, then plan improvements." },
@@ -120,7 +120,7 @@ export const services: Service[] = [
       { value: "99.9%", label: "Managed uptime" },
       { value: "1", label: "Contract for everything" },
     ],
-    related: ["retail-rollout", "clinic-hmis"],
+    related: ["retail-rollout"],
     faqs: [
       { q: "Do you offer retainers?", a: "Yes. Monthly retainers with a fixed number of hours and agreed response times, scaled to your team." },
       { q: "Do you support hardware you did not sell?", a: "Yes, after a quick audit of what you have." },

@@ -70,7 +70,7 @@ type Spacer = "lines" | "none" | "blank" | "rail";
 const spacerFor = (path: string): Spacer => {
   if (path === "/about") return "none";
   if (path === "/news" || path === "/services" || path.startsWith("/services/")) return "blank";
-  if (path === "/careers" || path === "/support") return "rail";
+  if (path === "/careers" || path === "/support" || path === "/brand") return "rail";
   return "lines";
 };
 
@@ -97,6 +97,7 @@ export default function Footer() {
     { href: "/contact", label: t("company.contact") },
     { href: "/careers", label: t("company.careers") },
     { href: "/support", label: t("company.support") },
+    { href: "/brand", label: t("company.brand") },
   ];
 
   // their Nasdaq block: a 24px logo at .6 and two muted narrow lines with the strong part in off-white

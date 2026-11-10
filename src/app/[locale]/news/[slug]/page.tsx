@@ -16,7 +16,7 @@ import { badgeDate, loadPost, loadPosts } from "@/components/sections/news/data"
 import s from "@/components/sections/news/news-classes";
 import { posts as localPosts } from "@/content/news";
 import { cn } from "@/lib/cn";
-import { JsonLd, newsArticleJsonLd, pageMetadata } from "@/lib/seo";
+import { JsonLd, breadcrumbJsonLd, newsArticleJsonLd, pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -54,7 +54,7 @@ export default async function ArticlePage({ params }: Props) {
   setRequestLocale(locale);
   const [p, all] = await Promise.all([loadPost(locale as Locale, slug), loadPosts(locale as Locale)]);
   if (!p) notFound();
-  const t = await getTranslations("newsPage");
+  const [t, tn] = await Promise.all([getTranslations("newsPage"), getTranslations("nav")]);
   const tag = (c: string) => t(`cover.${c}`);
 
   const idx = all.findIndex((x) => x.slug === p.slug);
@@ -64,6 +64,9 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <div data-theme="light" className="relative z-[2] overflow-x-clip text-ink">
+      <JsonLd
+        data={breadcrumbJsonLd(locale, [{ name: tn("home"), path: "/" }, { name: tn("news"), path: "/news" }, { name: p.title, path: `/news/${p.slug}` }])}
+      />
       <JsonLd
         data={newsArticleJsonLd({
           locale,

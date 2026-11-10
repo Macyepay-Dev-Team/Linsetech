@@ -135,6 +135,8 @@ export function organizationJsonLd(description?: string) {
       { "@type": "ContactPoint", contactType: "customer service", email: site.email, telephone: site.phone, availableLanguage: [...routing.locales] },
       { "@type": "ContactPoint", contactType: "technical support", email: site.supportEmail, telephone: site.phone, availableLanguage: [...routing.locales] },
     ],
+    areaServed: { "@type": "Country", name: "Rwanda" },
+    knowsLanguage: [...routing.locales],
     sameAs: site.social.map((s) => s.href),
   };
 }
@@ -162,6 +164,45 @@ export function newsArticleJsonLd(post: {
     ...(post.section ? { articleSection: post.section } : {}),
     author: post.author === site.name ? { "@type": "Organization", "@id": ORG_ID, name: site.name, url: absoluteUrl("/") } : { "@type": "Person", name: post.author },
     publisher: { "@type": "Organization", "@id": ORG_ID, name: site.name, logo: { "@type": "ImageObject", url: LOGO_URL } },
+  };
+}
+
+/** The site itself (one per locale), tied to the organization. */
+export function websiteJsonLd(locale: string, description?: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    url: absoluteUrl(localizedPath(toLocale(locale), "/")),
+    name: site.name,
+    ...(description ? { description } : {}),
+    inLanguage: locale,
+    publisher: { "@id": ORG_ID },
+  };
+}
+
+/** Breadcrumbs for an inner page: Home → … → the page (each item a localized absolute URL). */
+export function breadcrumbJsonLd(locale: string, items: { name: string; path: string }[]) {
+  const loc = toLocale(locale);
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, item: absoluteUrl(localizedPath(loc, it.path)) })),
+  };
+}
+
+/** One of our services, offered across Rwanda by the organization. */
+export function serviceJsonLd(service: { locale: string; path: string; name: string; description: string; type?: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.name,
+    description: service.description,
+    ...(service.type ? { serviceType: service.type } : {}),
+    url: absoluteUrl(localizedPath(toLocale(service.locale), service.path)),
+    provider: { "@id": ORG_ID },
+    areaServed: { "@type": "Country", name: "Rwanda" },
+    availableLanguage: [...routing.locales],
   };
 }
 

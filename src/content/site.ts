@@ -5,7 +5,7 @@ export const site = {
   email: "hello@linsetech.com",
   supportEmail: "support@linsetech.com",
   careersEmail: "careers@linsetech.com",
-  phone: "+250 788 000 000",
+  phone: "+250 785 258 161",
   address: ["KG 7 Ave, Kigali Heights", "Kigali, Rwanda"],
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com/company/linsetech" },

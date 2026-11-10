@@ -463,75 +463,110 @@
     "privacy": {
       "meta": {
         "title": "Privacy policy",
-        "description": "How Linse collects, uses and protects personal data (draft outline)."
+        "description": "How Linsetech Ltd collects, uses, stores and protects personal data, your rights under Rwanda's data protection law, and the cookies this site uses."
       },
       "title": "Privacy policy",
       "intro": {
         "heading": "Your privacy matters to us.",
         "body": [
-          "Placeholder. The Privacy policy text will be supplied and edited in the Studio.",
-          "The outline below lists the sections the final policy will cover. Until it is published, questions about personal data can be sent to {email}."
+          "This policy explains what personal data Linsetech Ltd (“Linse”, “we”) collects through this website and when you contact us, why we use it, who receives it, how long we keep it and the rights you have under Law No 058/2021 of 13/10/2021 relating to the protection of personal data and privacy in Rwanda.",
+          "Last updated: 10 November 2026. Questions about this policy or your data can be sent to {email}."
         ]
       },
       "sections": [
         {
           "title": "Who we are",
           "body": [
-            "This section will identify Linsetech Ltd (“Linse”), Kigali, Rwanda, as the organisation responsible for personal data collected through this website, and how to reach us."
+            "Linsetech Ltd is a company registered in Rwanda, based in Kigali. We design and build software, publish our own products, supply business hardware and provide IT services.",
+            "For the personal data described here, Linsetech Ltd is the data controller: we decide why and how it is used. You can reach us at {email}."
           ]
         },
         {
-          "title": "Information we collect",
+          "title": "What we collect",
           "body": [
-            "This section will list the information we collect: what you send through the contact form (name, email, company and message) and technical data such as pages visited and device type."
+            "What you send us. When you use the contact or project form: your name, email address, company (optional), the kind of help you need and your message. When you apply for a job: your name, email address, the role and a link to your CV or portfolio. When you join our newsletter: your email address and, if you choose, your first and last name, company and topics.",
+            "When we work together. Contact details of the people we deal with, and the information needed to quote, deliver, invoice and support our services and products.",
+            "Technical data. Our hosting provider records basic technical information when you visit (such as your IP address, browser type and the pages requested) to deliver the site and keep it secure. We do not use advertising or tracking cookies."
           ]
         },
         {
-          "title": "How we use information",
+          "title": "How we use it, and why",
           "body": [
-            "This section will explain why we use it: to answer enquiries, deliver services under contract, improve the website and meet legal obligations."
+            "To answer your enquiry and prepare a quote or proposal: this is necessary to take steps at your request before a contract.",
+            "To deliver, invoice and support what you buy from us: this is necessary to perform our contract with you or your organisation.",
+            "To consider your job application: necessary to take steps at your request; we use your data only for recruitment.",
+            "To send our newsletter: based on your consent, which you can withdraw at any time with the unsubscribe link or by writing to us.",
+            "To run, secure and improve this website, and to keep business records: our legitimate interests, and our legal obligations (for example tax and accounting rules).",
+            "We do not sell personal data, and we do not make decisions about you based solely on automated processing."
           ]
         },
         {
-          "title": "Sharing",
+          "title": "Who receives it",
           "body": [
-            "This section will name the kinds of service providers that help us run the website and our services, and the cases where the law requires disclosure."
+            "Our team, on a need-to-know basis.",
+            "Service providers who process data for us under contract and only on our instructions: our website host (Vercel Inc.), our email provider, which delivers form messages to our inbox, and, if you join it, our newsletter service.",
+            "Authorities, courts or advisers, when the law requires it or to establish, exercise or defend legal claims."
           ]
         },
         {
-          "title": "Retention",
+          "title": "Storage outside Rwanda",
           "body": [
-            "This section will state how long each type of information is kept and how it is deleted."
+            "Some of our providers, including our website host, store or process data outside Rwanda. The law requires personal data to be stored in Rwanda unless storage abroad is authorised by the National Cyber Security Authority (NCSA).",
+            "We store and transfer personal data outside Rwanda only as the law allows, with appropriate safeguards in place with each provider. Ask us at {email} for details of where your data is held."
+          ]
+        },
+        {
+          "title": "How long we keep it",
+          "body": [
+            "Enquiries and proposals that don't lead to work: 24 months after our last exchange.",
+            "Client and contract records: for the duration of the contract and as long as tax, accounting and other legal obligations require afterwards.",
+            "Job applications: 12 months after the role is filled, unless you agree to a longer period.",
+            "Newsletter: until you unsubscribe.",
+            "Hosting logs: kept by our host for a short period for security, typically no more than 30 days.",
+            "When data is no longer needed, we delete or anonymise it."
           ]
         },
         {
           "title": "Security",
           "body": [
-            "This section will describe the measures we use to protect information against loss and unauthorised access."
+            "The website is served over an encrypted connection (HTTPS). Access to personal data is limited to the people who need it, accounts are protected, and we choose providers that apply recognised security measures.",
+            "No system is completely secure. If a breach affecting your personal data occurs, we will act on it and notify the NCSA and, where required, the people affected, as the law requires."
           ]
         },
         {
           "title": "Your rights",
           "body": [
-            "This section will explain how to access, correct or delete your information, object to its use, and lodge a complaint with the competent authority in Rwanda."
+            "Under Rwanda's data protection law you have the right to be informed about how your data is used; to access your data and get a copy of it; to have inaccurate data corrected; to have data erased when it is no longer needed or was processed unlawfully; to object to processing, including for direct marketing; to restrict processing; to data portability; and not to be subject to a decision based solely on automated processing.",
+            "Where we rely on your consent, you can withdraw it at any time; this does not affect what was done before.",
+            "To exercise any of these rights, write to {email}. We may ask you to confirm your identity, and we will reply within the time the law sets.",
+            "If you are not satisfied with our answer, you can lodge a complaint with the National Cyber Security Authority (NCSA), Rwanda's data protection authority."
           ]
         },
         {
           "title": "Cookies",
           "body": [
-            "This section will list the cookies and similar technologies used on this website and how to control them."
+            "This site uses only the cookies it needs to work. We don't use advertising or tracking cookies, and if we add website statistics they will be cookie-free.",
+            "linse_cookie_consent: remembers that you have seen and closed the cookie notice, so it isn't shown again. Kept for 1 year.",
+            "NEXT_LOCALE: remembers the language you are browsing in (English, French or Kinyarwanda). Kept until you close your browser.",
+            "You can delete or block cookies in your browser settings; the site will still work, but the notice may appear again and the language may reset."
+          ]
+        },
+        {
+          "title": "Children",
+          "body": [
+            "This website and our services are meant for businesses and adults. We do not knowingly collect personal data from children under 16. If you believe a child has sent us personal data, contact us and we will delete it."
           ]
         },
         {
           "title": "Changes to this policy",
           "body": [
-            "This section will explain how updates are announced and when they take effect."
+            "We may update this policy when our services or the law change. The date at the top shows the latest version; important changes will be highlighted on this page."
           ]
         },
         {
           "title": "Contact",
           "body": [
-            "Questions about this policy: {email}."
+            "Linsetech Ltd, Kigali, Rwanda. Email: {email}."
           ]
         }
       ]
@@ -539,75 +574,80 @@
     "terms": {
       "meta": {
         "title": "Terms of use",
-        "description": "The terms that apply to the Linse website (draft outline)."
+        "description": "The terms that apply when you use the Linse website: content, quotes, intellectual property, liability and Rwandan law."
       },
       "title": "Terms of use",
       "intro": {
         "heading": "Please read these terms carefully.",
         "body": [
-          "Placeholder. The Terms of use text will be supplied and edited in the Studio.",
-          "The outline below lists the sections the final terms will cover. Until they are published, questions can be sent to {email}."
+          "These terms apply to your use of this website, operated by Linsetech Ltd (“Linse”, “we”), Kigali, Rwanda. By using the site you accept them. If you don't agree, please don't use the site.",
+          "Last updated: 10 November 2026. Questions can be sent to {email}."
         ]
       },
       "sections": [
         {
-          "title": "Acceptance",
+          "title": "Using the website",
           "body": [
-            "This section will explain that using this website means accepting these terms."
+            "You may browse, read and share links to this site for lawful purposes. You must not try to disrupt it, gain unauthorised access to it or to our systems, scrape it in bulk, or use it to send unlawful, harmful or misleading content.",
+            "We may change, suspend or withdraw any part of the site at any time."
           ]
         },
         {
-          "title": "Use of the website",
+          "title": "Information on the site",
           "body": [
-            "This section will set out acceptable use: no misuse, and no attempt to disrupt the website or access our systems without permission."
+            "We work to keep the site accurate and up to date, but its content is general information, provided as it is. Articles and guides, including those on tax, payments or data protection, are not legal, tax or financial advice: check your own situation with a qualified adviser or the relevant authority."
           ]
         },
         {
-          "title": "Services and quotes",
+          "title": "Quotes, proposals and services",
           "body": [
-            "This section will explain that projects, products and hardware sales are governed by separate written agreements and quotes."
+            "Information on the site about our services, products, prices or timings is indicative and is not an offer. A quote or proposal becomes binding only when both parties sign an agreement or an order is confirmed in writing.",
+            "Our services, products, hardware sales and support are governed by the agreement, order or terms we provide for them, which take precedence over these terms."
           ]
         },
         {
           "title": "Intellectual property",
           "body": [
-            "This section will state who owns the content, brand and software shown on this website."
+            "The site and its content (text, design, code, images, 3D renders and video) belong to Linsetech Ltd or its licensors and are protected by law. Linse, the LS mark and our product names are our trade marks.",
+            "You may use the files in our logo pack to refer to Linse, following the brand guidelines on this site. Any other use of our content or marks needs our written permission."
+          ]
+        },
+        {
+          "title": "What you send us",
+          "body": [
+            "When you send us information through a form or by email, you confirm it is accurate and that you are entitled to share it. Please don't send confidential information or passwords through the website forms.",
+            "We use personal data as described in our Privacy policy."
           ]
         },
         {
           "title": "Third-party links",
           "body": [
-            "This section will cover links to other websites, which we do not control."
+            "The site may link to other websites. We don't control them and are not responsible for their content, availability or privacy practices."
           ]
         },
         {
-          "title": "Disclaimer",
+          "title": "Liability",
           "body": [
-            "This section will explain that information on the website is provided for general purposes and may change."
-          ]
-        },
-        {
-          "title": "Limitation of liability",
-          "body": [
-            "This section will set out the limits of our liability for the use of this website."
+            "To the extent permitted by law, we are not liable for any indirect or consequential loss, or for loss of profit, revenue, data or business, arising from your use of the site or your reliance on its content.",
+            "Nothing in these terms limits liability that cannot be limited under Rwandan law."
           ]
         },
         {
           "title": "Governing law",
           "body": [
-            "This section will state the law that governs these terms and the courts that hear disputes."
+            "These terms are governed by the laws of the Republic of Rwanda. Any dispute will be brought before the competent courts of Rwanda, after we have first tried in good faith to resolve it together."
           ]
         },
         {
           "title": "Changes to these terms",
           "body": [
-            "This section will explain how and when these terms may be updated."
+            "We may update these terms from time to time. The date at the top shows the latest version; continuing to use the site after a change means you accept the updated terms."
           ]
         },
         {
           "title": "Contact",
           "body": [
-            "Questions about these terms: {email}."
+            "Linsetech Ltd, Kigali, Rwanda. Email: {email}."
           ]
         }
       ]

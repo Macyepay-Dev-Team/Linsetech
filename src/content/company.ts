@@ -22,12 +22,12 @@ export const pillars = ["software", "publishing", "hardware", "services"] as con
 
 export const milestones = ["2022", "2024", "2025", "2026"] as const;
 
-export const certifications = ["rdb", "rra", "microsoft", "iso"] as const;
+export const certifications = ["rdb", "rra"] as const;
 
 export const documents = [
   { id: "profile", type: "PDF", href: null },
   { id: "incorporation", type: "PDF", href: null },
-  { id: "press", type: "ZIP", href: null },
+  { id: "press", type: "ZIP", href: "/brand/linse-logo-pack.zip" },
 ] as const;
 
 /** Company contacts (the office address and phone come from site.ts too). */
@@ -52,7 +52,7 @@ export const perks = [
 
 export const supportChannels = [
   { title: "Help desk", text: "support@linsetech.com", note: "Tickets, tracked with an SLA" },
-  { title: "Phone / WhatsApp", text: "+250 788 000 000", note: "Mon–Fri 08:00–18:00, Sat 09:00–13:00" },
+  { title: "Phone / WhatsApp", text: "+250 785 258 161", note: "Mon–Fri 08:00–18:00, Sat 09:00–13:00" },
   { title: "On-site", text: "Kigali and nationwide", note: "Scheduled or emergency visits" },
 ];
 

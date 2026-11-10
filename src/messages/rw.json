@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Linse — Porogaramu, sisitemu n’ibikoresho",
-    "description": "Linse ikora, yubaka kandi itunga porogaramu, ihuza sisitemu kandi ikwirakwiza ibikoresho bya mudasobwa — ibikorwa byose bya IT, bikorerwa mu Rwanda."
+    "title": "Ikoranabuhanga: software, IT na mudasobwa — Linse",
+    "description": "Linse ikora imbuga za interineti, porogaramu (apps) na sisitemu z'ubucuruzi, igurisha mudasobwa kandi ikita kuri IT y'ibigo mu Rwanda hose."
   },
   "cookies": {
     "label": "Itangazo kuri cookies",
@@ -223,10 +223,6 @@
     "catalogue": "Saba urutonde rw’ibikoresho",
     "learn": "Menya byinshi"
   },
-  "partners": {
-    "eyebrow": "Abafatanyabikorwa",
-    "title": "Dufatanya n’abahanga."
-  },
   "news": {
     "eyebrow": "Ubusesenguzi bwo kuri blog",
     "title": "Amakuru mashya",
@@ -290,8 +286,8 @@
     "company": {
       "contact": "Twandikire",
       "careers": "Akazi",
-      "partners": "Abafatanyabikorwa",
-      "support": "Ubufasha"
+      "support": "Ubufasha",
+      "brand": "Ikirango"
     },
     "legal": {
       "rights": "© {year} Linsetech Ltd. Uburenganzira bwose burasigasiwe.",
@@ -341,7 +337,7 @@
       "rail": {
         "leadership": "Ubuyobozi",
         "team": "Ikipe",
-        "partners": "Abafatanyabikorwa & impamyabushobozi",
+        "partners": "Ibirango n’iyandikwa",
         "documents": "Inyandiko z’ikigo",
         "contacts": "Aho utubona"
       },

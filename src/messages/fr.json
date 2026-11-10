@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Linse — Logiciels, systèmes et matériel",
-    "description": "Linse conçoit, développe et possède des logiciels, intègre des systèmes et distribue du matériel informatique — toutes les activités IT, depuis le Rwanda."
+    "title": "Entreprise informatique et logiciels à Kigali — Linse",
+    "description": "Linse conçoit sites web, applications et systèmes de gestion, fournit le matériel informatique et assure le support IT des entreprises au Rwanda."
   },
   "cookies": {
     "label": "Avis sur les cookies",
@@ -223,10 +223,6 @@
     "catalogue": "Demander le catalogue",
     "learn": "En savoir plus"
   },
-  "partners": {
-    "eyebrow": "Partenaires",
-    "title": "Avec les meilleurs."
-  },
   "news": {
     "eyebrow": "Du côté du blog",
     "title": "Actualités",
@@ -290,8 +286,8 @@
     "company": {
       "contact": "Contact",
       "careers": "Carrières",
-      "partners": "Partenaires",
-      "support": "Support"
+      "support": "Support",
+      "brand": "Marque"
     },
     "legal": {
       "rights": "© {year} Linsetech Ltd. Tous droits réservés.",
@@ -341,7 +337,7 @@
       "rail": {
         "leadership": "Direction",
         "team": "Équipe",
-        "partners": "Partenaires & certifications",
+        "partners": "Marques et enregistrements",
         "documents": "Documents",
         "contacts": "Contacts"
       },

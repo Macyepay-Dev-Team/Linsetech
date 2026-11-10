@@ -1,8 +1,8 @@
 {
   "servicesPage": {
     "meta": {
-      "title": "Services",
-      "description": "Design, websites and apps, systems and integration, the software we publish, hardware and distribution, and IT services: six services, one team."
+      "title": "Software, Hardware & IT Services in Rwanda",
+      "description": "Six services from one Kigali team: design, websites and apps, systems and mobile money integration, MacyePay, business hardware and managed IT."
     },
     "hero": {
       "title": "Everything IT, under one roof.",
@@ -101,7 +101,11 @@
             "q": "Can you refresh an existing brand?",
             "a": "Yes, from a light refresh to a full identity, including logo, typography, colour and templates."
           }
-        ]
+        ],
+        "meta": {
+          "title": "UI/UX & Product Design Agency in Kigali",
+          "description": "Product, UX/UI and brand design for digital products in Rwanda: research, prototypes and design systems built for real phones and real bandwidth."
+        }
       },
       "web": {
         "title": "Websites & apps",
@@ -152,7 +156,11 @@
             "q": "Can we edit the content ourselves?",
             "a": "Yes. We set up a CMS (Sanity by default) so your team can edit pages, news and products without a developer."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Website & App Development in Rwanda",
+          "description": "Websites, web apps and Android/iOS apps built in Kigali: fast on mobile data, MoMo-ready, in English, French and Kinyarwanda. Ask for a quote."
+        }
       },
       "systems": {
         "title": "Systems & integration",
@@ -203,7 +211,11 @@
             "q": "Can you take over a system someone else built?",
             "a": "Yes. We start with an audit, stabilise what is in production, then plan improvements."
           }
-        ]
+        ],
+        "meta": {
+          "title": "POS, ERP & Mobile Money Integration in Rwanda",
+          "description": "Business systems that work together: POS, ERP and inventory, MTN MoMo and Airtel Money payments, and links between your existing software."
+        }
       },
       "software": {
         "title": "Software we publish",
@@ -254,7 +266,11 @@
             "q": "Will you build a product with us?",
             "a": "Yes. We co-develop and co-own products with partners who bring the market; talk to us."
           }
-        ]
+        ],
+        "meta": {
+          "title": "MacyePay: installment payment software",
+          "description": "MacyePay lets retailers and lenders sell on installments, with notarised agreements, automated reminders and MoMo collections."
+        }
       },
       "hardware": {
         "title": "Hardware & distribution",
@@ -305,7 +321,11 @@
             "q": "Can you quote a full office setup?",
             "a": "Yes: devices, networking, security and installation in one quote. Request the catalogue."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Business Laptops, POS & IT Hardware in Rwanda",
+          "description": "Business laptops, desktops, servers, networking, POS terminals, printers and CCTV supplied and delivered across Rwanda, with warranty and setup."
+        }
       },
       "it": {
         "title": "IT services",
@@ -356,7 +376,11 @@
             "q": "Do you support hardware you did not sell?",
             "a": "Yes, after a quick audit of what you have."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Managed IT Services & IT Support in Kigali",
+          "description": "Managed IT for Rwandan businesses: support contracts with SLAs, networks, backups that restore, and on-site technicians in Kigali and beyond."
+        }
       }
     },
     "models": {
@@ -477,10 +501,6 @@
       "macyepay": {
         "tag": "Fintech · Published product",
         "blurb": "Installment payments for Rwandan businesses, backed by notarised agreements, automated enforcement and credit-bureau integration."
-      },
-      "clinic-hmis": {
-        "tag": "Systems · Health",
-        "blurb": "Patient records, pharmacy, billing and insurance claims in one hospital management system."
       },
       "retail-rollout": {
         "tag": "Hardware · Distribution",

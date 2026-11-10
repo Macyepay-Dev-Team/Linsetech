@@ -1,0 +1,252 @@
+{
+  "brandPage": {
+    "meta": {
+      "title": "Amabwiriza y’ikirango",
+      "description": "Ikirango cya Linse: logo, amabara, imyandikire, ikirahure n’icyuma, imigendere n’imvugo, hamwe n’ipaki ya logo yo gukuramo."
+    },
+    "hero": {
+      "title": "Ikirango",
+      "lead": "Isura ya Linse, imigendere yayo n’imvugo yayo: uburyo bumwe ku rubuga, ku bicuruzwa byacu no ku butumwa bwose dutangaza.",
+      "cta": "Kuramo ipaki ya logo"
+    },
+    "rail": {
+      "label": "Amabwiriza y’ikirango",
+      "idea": "Igitekerezo",
+      "logo": "Logo",
+      "colour": "Amabara",
+      "materials": "Ikirahure n’icyuma",
+      "type": "Imyandikire",
+      "graphic": "Imiterere y’ibishushanyo",
+      "motion": "Imigendere",
+      "voice": "Imvugo",
+      "applications": "Aho bikoreshwa",
+      "downloads": "Ibyo gukuramo"
+    },
+    "idea": {
+      "title": "Ibya IT byose ahantu hamwe",
+      "lead": "Ikipe imwe ishinzwe porogaramu, ibikoresho zikoreraho n’ubufasha butuma byombi bikomeza gukora. Ikirango kigaragaza icyo gitekerezo mu buryo butatu.",
+      "items": {
+        "night": {
+          "title": "Kuva mu ijoro ujya mu mucyo",
+          "text": "Paji zitangirira ku cyatsi cyijimye nk’ijoro, zikagenda zicya: ibigoye bigahinduka ibisobanutse."
+        },
+        "metal": {
+          "title": "Icyuma",
+          "text": "Chrome na aluminiyumu irimo imirongo mito bigaragaza ibikoresho: ibintu bikozwe ngo biramba."
+        },
+        "glass": {
+          "title": "Ikirahure",
+          "text": "Ikirahure kitabonerana neza cyangwa kibonerana, gifite urumuri rw’icyatsi, kigaragaza porogaramu: zisobanutse kandi zinoze."
+        }
+      },
+      "together": "Iyo bihujwe biba igikoresho: umubiri w’icyuma na ecran y’ikirahure. Buri shusho nyamukuru ikoresha kimwe muri byo cyangwa byombi."
+    },
+    "logo": {
+      "title": "Logo",
+      "lead": "Ikimenyetso LS n’izina Linse, byanditse muri Archivo SemiBold. Koresha amadosiye ari mu ipaki ya logo; ntuzigere uyashushanya bundi bushya.",
+      "tiles": {
+        "night": "Umweru woroheje ku Ijoro (bisanzwe)",
+        "light": "Wino ku ibara rikeye",
+        "green": "Ijoro ku cyatsi",
+        "mark": "Ikimenyetso cyonyine: amafoto ya porofayili, favicon, ibikoresho"
+      },
+      "rules": {
+        "space": {
+          "title": "Umwanya w’ubusa",
+          "text": "Ubugari bw’umurongo uhagaze wa L, ku mpande zose."
+        },
+        "size": {
+          "title": "Ingano nto ishoboka",
+          "text": "Ikimenyetso: uburebure bwa 16 px; logo itambitse: ubugari bwa 72 px."
+        },
+        "legal": {
+          "title": "Izina ryemewe n’amategeko",
+          "text": "Linsetech Ltd, mu nyandiko, mu masezerano no mu gice cyo hasi cy’amapaji."
+        }
+      },
+      "dontsTitle": "Ibyo kwirinda",
+      "donts": [
+        "Kuyirambura cyangwa kuyikanda",
+        "Kuyihengamisha",
+        "Kuyikora mu mirongo y’inyuma gusa",
+        "Kuyiha ibara ritari mu mabara yacu",
+        "Kuyishyira ku mafoto yuzuyemo ibintu byinshi",
+        "Kuyongeraho igicucu cyangwa ibindi bintu, uretse ikirahure n’icyuma byemewe"
+      ]
+    },
+    "colour": {
+      "title": "Amabara",
+      "lead": "Ijoro ni ryo shingiro ry’ikirango, icyatsi ni cyo gikurura amaso. Icyatsi kigarukire hafi ku gice kimwe cya cumi cya buri gishushanyo.",
+      "copy": "Koporora",
+      "copied": "Byakoporowe",
+      "swatches": {
+        "night": {
+          "name": "Ijoro (Night)",
+          "role": "Ibara ry’inyuma"
+        },
+        "green": {
+          "name": "Icyatsi cya Linse (Linse Green)",
+          "role": "Gushimangira, ibimenyetso, buto z’ingenzi"
+        },
+        "offWhite": {
+          "name": "Umweru woroheje (Off-white)",
+          "role": "Inyuguti n’imirongo ku Ijoro"
+        },
+        "ink": {
+          "name": "Wino (Ink)",
+          "role": "Inyuguti ku ibara rikeye"
+        },
+        "paper": {
+          "name": "Urupapuro (Paper)",
+          "role": "Ibice bikeye, inyandiko"
+        },
+        "mist": {
+          "name": "Igihu (Mist)",
+          "role": "Ubutumwa n’amakarita bikeye"
+        }
+      },
+      "scale": "Ibyiciro by’icyatsi",
+      "gradientsTitle": "Ivanga ry’amabara",
+      "gradients": {
+        "nightfall": "Umugoroba (Nightfall): igice cyo hejuru cya paji",
+        "sweep": "Umuraba (Sweep): ibyapa n’ibifuniko",
+        "glow": "Urumuri (Glow): ijoro ririmo umucyo uzamuka"
+      },
+      "ratioTitle": "Ingano ya buri bara",
+      "ratio": {
+        "night": "Ijoro",
+        "neutral": "Umweru woroheje n’ibara ry’ivu",
+        "green": "Icyatsi"
+      },
+      "a11y": "Icyatsi ku Ijoro gishobora gukoreshwa ku nyandiko (hafi 8.7:1). Ku ibara ry’inyuma rikeye, inyandiko y’icyatsi yandikwa mu Cyatsi 600 (#15803D); icyatsi kibengerana gikoreshwa ku bishushanyo no gushimangira gusa."
+    },
+    "materials": {
+      "title": "Ikirahure n’icyuma",
+      "lead": "Ikirahure n’icyuma bigaragazwa muri sitidiyo yijimye: itara nyamukuru ry’umweru woroheje, n’urumuri rw’icyatsi rukikiza impande ruturutse hasi n’inyuma. Buri shusho igira ikintu kimwe nyamukuru.",
+      "items": {
+        "chrome": {
+          "title": "Chrome",
+          "text": "Irabengerana nk’indorerwamo, ikagaragaza sitidiyo yijimye irimo ibara ry’icyatsi, umwijima n’urumuri bitandukanye cyane. Ikoreshwa ku bikoresho no ku kimenyetso LS."
+        },
+        "glass": {
+          "title": "Ikirahure",
+          "text": "Kitabonerana neza cyangwa kibonerana, kibyibushye, gifite impande zikase zihengamye zifata urumuri rw’umweru woroheje, n’urumuri ruke rw’icyatsi imbere. Gikoreshwa kuri porogaramu, amakuru n’amakarita."
+        }
+      },
+      "combined": "Bihujwe: ikadire ya chrome ifashe ikirahure, nk’uko igikoresho gifata ecran yacyo.",
+      "grain": "Utudomo duto nk’utw’amafoto ya kera (4–6 %) dushyirwa ku mashusho yijimye, ntitujya ku nyandiko."
+    },
+    "type": {
+      "title": "Imyandikire",
+      "lead": "Archivo ku byo usoma byose, Archivo Narrow mu nyuguti nkuru ku byo ureba vuba. Zombi ziboneka ku buntu kuri Google Fonts.",
+      "sample": "Ibya IT byose ahantu hamwe.",
+      "narrowSample": "01 / Imirimo · Ibikoresho · Kigali",
+      "weights": "Regular 400 · Medium 500 · SemiBold 600",
+      "scaleTitle": "Ingano",
+      "scale": {
+        "display": "Umutwe munini",
+        "h2": "Umutwe w’igice",
+        "h3": "Umutwe w’ikarita",
+        "body": "Inyandiko",
+        "label": "Akarango"
+      },
+      "note": "Imitwe iba ifatanye (umwanya hagati y’imirongo 1.0–1.1, hagati y’inyuguti −2 %). Ikinyarwanda gifata umwanya urenzeho 15–20 % ugereranyije n’Icyongereza: ugisigire umwanya."
+    },
+    "graphic": {
+      "title": "Imiterere y’ibishushanyo",
+      "lead": "Inguni zitaburungushuye ahantu hose, imirongo mito icagaguye, kare nto y’icyatsi nk’ikimenyetso, na kare imwe yubakirwaho imbonerahamwe, amakarita n’imigendere.",
+      "units": {
+        "solid": "Yuzuye",
+        "layered": "Igerekeranye",
+        "outline": "Imbibi zicagaguye",
+        "grid": "Imbonerahamwe",
+        "glass": "Ikirahure",
+        "chrome": "Chrome"
+      },
+      "elements": {
+        "dashed": {
+          "title": "Imirongo icagaguye",
+          "text": "1 px, umweru woroheje ku 15 % ku Ijoro, umukara ku 15 % ku ibara rikeye."
+        },
+        "marker": {
+          "title": "Ikimenyetso",
+          "text": "Kare y’icyatsi ya 6 px ishyirwa imbere y’imitwe n’intonde."
+        },
+        "index": {
+          "title": "Imibare y’urutonde",
+          "text": "01, 02… muri Archivo Narrow, ku ntambwe, ku masilayidi no ku bice."
+        },
+        "icons": {
+          "title": "Udushushanyo",
+          "text": "Udushushanyo tw’imirongo, umurongo wa 1.5 px ku buso bwa 24 px, impera zigororotse."
+        }
+      }
+    },
+    "motion": {
+      "title": "Imigendere",
+      "lead": "Ibintu biza vuba bigatuza buhoro. Inyandiko igaragara umurongo ku murongo cyangwa inyuguti ku nyuguti, 3D igenda uko umuntu amanura paji, kandi videwo zisubiramo ku mbuga nkoranyambaga zimara amasegonda 6–10, nta hantu hagaragara zihurira.",
+      "items": {
+        "expo": "Expo out: kwinjira, 0.6–1.2 s",
+        "inOutQuart": "In-out quart: guhinduranya amapaji",
+        "outQuad": "Out quad: ibisubizo bito bya UI"
+      },
+      "replay": "Subiramo"
+    },
+    "voice": {
+      "title": "Imvugo",
+      "lead": "Twandika nk’uko injeniyeri mwiza asobanura: mu buryo bworoshye, bufatika, nta gukabya.",
+      "items": {
+        "plain": {
+          "title": "Byoroshye",
+          "text": "Interuro ngufi n’amagambo asanzwe. Sobanura ijambo cyangwa urireke."
+        },
+        "specific": {
+          "title": "Bifatika",
+          "text": "Imibare nyayo, ahantu nyaho, intambwe nyazo. Nta mubare dutangaza tudashobora kwemeza."
+        },
+        "confident": {
+          "title": "Twizeye",
+          "text": "Tuvuga ibyo dukora n’uko tubikora. Nta “twahinduye byose”, nta “turi aba mbere muri Afurika”."
+        },
+        "local": {
+          "title": "Iby’iwacu",
+          "text": "Icyongereza n’Ikinyarwanda, buri rurimi rwandikwa uko rusanzwe ruvugwa, nta guhindura ijambo ku ijambo."
+        }
+      },
+      "doTitle": "Andika",
+      "dontTitle": "Ntukandike",
+      "pairs": [
+        {
+          "do": "Dutunganya buri mudasobwa igendanwa mbere y’uko isohoka aho dukorera.",
+          "dont": "Dutanga ibisubizo bya IT bigezweho kandi biruta ibindi byose."
+        },
+        {
+          "do": "Ibibazo bikomeye, umutekinisiye abyitaho mu isaha imwe.",
+          "dont": "Ubufasha bwihuta nk’umurabyo, bwo ku rwego rw’isi, 24/7/365!"
+        }
+      ]
+    },
+    "applications": {
+      "title": "Aho bikoreshwa",
+      "lead": "Imiterere imwe kuri buri butumwa: logo hejuru ibumoso, izina ry’urukurikirane hejuru iburyo, hasi umurongo ucagaguye uriho aderesi, n’ikintu kimwe nyamukuru. Ubutumwa bwo ku Ijoro n’ubwo ku ibara rikeye busimburana, ku buryo amafoto ari kuri porofayili agaragara nk’ikibaho cya dame.",
+      "social": "Ubutumwa ku mbuga nkoranyambaga",
+      "sizes": "Feed 1080 × 1350 · Stories na Reels 1080 × 1920 · X 1200 × 675 · Ihuza kuri LinkedIn 1200 × 627",
+      "card": "Ikarita y’akazi",
+      "signature": "Umukono wo kuri imeri",
+      "name": "Izina ryawe",
+      "role": "Umwanya wawe",
+      "signatureLine": "Porogaramu, ibikoresho na IT ahantu hamwe",
+      "device": "Ikirango ku bikoresho: ikimenyetso LS ku gishushanyo cya POS ya Linse"
+    },
+    "downloads": {
+      "title": "Ibyo gukuramo",
+      "items": {
+        "logos": "Ipaki ya logo: ikimenyetso na logo zuzuye, SVG na PNG, amabara ane",
+        "guidelines": "Amabwiriza y’ikirango (PDF)"
+      },
+      "download": "Kuramo",
+      "soon": "Biraza vuba",
+      "contact": "Ibibazo ku ikoreshwa ry’ikirango, cyangwa ubusabe bw’itangazamakuru: press@linsetech.com"
+    }
+  }
+}

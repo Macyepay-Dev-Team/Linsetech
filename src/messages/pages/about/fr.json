@@ -1,8 +1,8 @@
 {
   "aboutPage": {
     "meta": {
-      "title": "À propos",
-      "description": "Linse est une entreprise technologique basée à Kigali. Nous concevons et développons des logiciels, éditons nos propres produits, distribuons du matériel et gérons l’informatique d’organisations qui ont besoin que tout fonctionne ensemble."
+      "title": "À propos : entreprise technologique à Kigali",
+      "description": "Une seule équipe à Kigali pour le design, le logiciel, le matériel et le support IT. Découvrez l'équipe derrière Linse et MacyePay."
     },
     "hero": {
       "title": "Construire la colonne vertébrale numérique des entreprises qui grandissent.",
@@ -75,14 +75,13 @@
         "aria": "Sur cette page",
         "leadership": "Direction",
         "team": "Équipe",
-        "partners": "Partenaires",
         "documents": "Documents",
         "contacts": "Contacts"
       },
       "headings": {
         "leadership": "Direction",
         "team": "Équipe",
-        "partners": "Partenaires et certifications",
+        "partners": "Marques et enregistrements",
         "documents": "Documents de l’entreprise",
         "contacts": "Contacts"
       },
@@ -120,14 +119,11 @@
       "partners": {
         "sub": "Nous fournissons et assurons le support d’équipements professionnels, et construisons sur les plateformes que nos clients utilisent déjà.",
         "brands": "Marques de matériel",
-        "platforms": "Plateformes et partenaires",
-        "certs": "Certifications"
+        "certs": "Enregistrements"
       },
       "certifications": {
         "rdb": "Enregistrée au RDB",
-        "rra": "En règle auprès de la RRA",
-        "microsoft": "Partenaire Microsoft (en cours)",
-        "iso": "ISO 27001 (en cours)"
+        "rra": "En règle auprès de la RRA"
       },
       "documents": {
         "profile": "Présentation de l’entreprise",

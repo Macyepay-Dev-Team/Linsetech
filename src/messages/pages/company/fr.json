@@ -463,75 +463,110 @@
     "privacy": {
       "meta": {
         "title": "Politique de confidentialité",
-        "description": "Comment Linse collecte, utilise et protège les données personnelles (plan provisoire)."
+        "description": "Comment Linsetech Ltd collecte, utilise, conserve et protège les données personnelles, vos droits au titre de la loi rwandaise sur la protection des données et les cookies utilisés par ce site."
       },
       "title": "Politique de confidentialité",
       "intro": {
         "heading": "Votre vie privée compte pour nous.",
         "body": [
-          "Texte provisoire. La politique de confidentialité sera fournie et modifiée dans le Studio.",
-          "Le plan ci-dessous liste les sections que couvrira la politique définitive. D’ici sa publication, vos questions sur les données personnelles peuvent être adressées à {email}."
+          "La présente politique explique quelles données personnelles Linsetech Ltd (« Linse », « nous ») collecte par l’intermédiaire de ce site et lorsque vous nous contactez, pourquoi nous les utilisons, qui les reçoit, combien de temps nous les conservons et quels droits vous confère, au Rwanda, la loi n° 058/2021 du 13/10/2021 relative à la protection des données à caractère personnel et de la vie privée.",
+          "Dernière mise à jour : 10 novembre 2026. Vos questions sur cette politique ou sur vos données peuvent être adressées à {email}."
         ]
       },
       "sections": [
         {
           "title": "Qui sommes-nous",
           "body": [
-            "Cette section identifiera Linsetech Ltd (« Linse »), Kigali, Rwanda, comme responsable des données personnelles collectées via ce site, et indiquera comment nous joindre."
+            "Linsetech Ltd est une société immatriculée au Rwanda, établie à Kigali. Nous concevons et développons des logiciels, éditons nos propres produits, fournissons du matériel informatique aux entreprises et proposons des services informatiques.",
+            "Pour les données personnelles décrites ici, Linsetech Ltd est le responsable du traitement : c’est nous qui décidons pourquoi et comment elles sont utilisées. Vous pouvez nous joindre à {email}."
           ]
         },
         {
           "title": "Données collectées",
           "body": [
-            "Cette section listera les informations collectées : ce que vous envoyez via le formulaire de contact (nom, e-mail, entreprise et message) et des données techniques comme les pages consultées et le type d’appareil."
+            "Ce que vous nous envoyez. Lorsque vous utilisez le formulaire de contact ou de projet : votre nom, votre adresse e-mail, votre entreprise (facultatif), le type d’aide dont vous avez besoin et votre message. Lorsque vous postulez à un emploi : votre nom, votre adresse e-mail, le poste visé et un lien vers votre CV ou votre portfolio. Lorsque vous vous inscrivez à notre newsletter : votre adresse e-mail et, si vous le souhaitez, vos prénom et nom, votre entreprise et les sujets qui vous intéressent.",
+            "Lorsque nous travaillons ensemble. Les coordonnées des personnes avec lesquelles nous sommes en relation, ainsi que les informations nécessaires pour établir des devis, fournir, facturer et assurer le support de nos services et produits.",
+            "Données techniques. Notre hébergeur enregistre des informations techniques de base lors de votre visite (comme votre adresse IP, le type de navigateur et les pages demandées) afin de fournir le site et d’en assurer la sécurité. Nous n’utilisons pas de cookies publicitaires ni de cookies de suivi."
           ]
         },
         {
-          "title": "Utilisation des données",
+          "title": "Comment nous utilisons vos données, et pourquoi",
           "body": [
-            "Cette section expliquera pourquoi nous les utilisons : répondre aux demandes, fournir les services sous contrat, améliorer le site et respecter nos obligations légales."
+            "Pour répondre à votre demande et préparer un devis ou une proposition : ce traitement est nécessaire à l’exécution de mesures précontractuelles prises à votre demande.",
+            "Pour fournir, facturer et assurer le support de ce que vous nous achetez : ce traitement est nécessaire à l’exécution de notre contrat avec vous ou avec votre organisation.",
+            "Pour examiner votre candidature : ce traitement est nécessaire à l’exécution de mesures prises à votre demande ; nous utilisons vos données uniquement pour le recrutement.",
+            "Pour vous envoyer notre newsletter : sur la base de votre consentement, que vous pouvez retirer à tout moment au moyen du lien de désinscription ou en nous écrivant.",
+            "Pour faire fonctionner, sécuriser et améliorer ce site, et pour tenir nos registres commerciaux : nos intérêts légitimes, ainsi que nos obligations légales (par exemple les règles fiscales et comptables).",
+            "Nous ne vendons pas de données personnelles et ne prenons aucune décision vous concernant fondée exclusivement sur un traitement automatisé."
           ]
         },
         {
-          "title": "Partage",
+          "title": "Destinataires des données",
           "body": [
-            "Cette section précisera les types de prestataires qui nous aident à faire fonctionner le site et nos services, ainsi que les cas où la loi impose une communication."
+            "Notre équipe, selon le principe du besoin d’en connaître.",
+            "Les prestataires qui traitent des données pour notre compte, en vertu d’un contrat et uniquement sur nos instructions : notre hébergeur (Vercel Inc.), notre fournisseur de messagerie, qui achemine les messages des formulaires vers notre boîte de réception, et, si vous vous y inscrivez, notre service de newsletter.",
+            "Les autorités, les juridictions ou nos conseils, lorsque la loi l’exige ou pour la constatation, l’exercice ou la défense d’un droit en justice."
           ]
         },
         {
-          "title": "Conservation",
+          "title": "Stockage hors du Rwanda",
           "body": [
-            "Cette section indiquera la durée de conservation de chaque type d’information et la façon dont elle est supprimée."
+            "Certains de nos prestataires, dont notre hébergeur, stockent ou traitent des données en dehors du Rwanda. La loi impose que les données personnelles soient stockées au Rwanda, sauf si leur stockage à l’étranger est autorisé par l’Office National pour la Cyber-Sécurité (NCSA).",
+            "Nous ne stockons et ne transférons des données personnelles hors du Rwanda que dans les conditions prévues par la loi, avec des garanties appropriées mises en place auprès de chaque prestataire. Écrivez-nous à {email} pour savoir où vos données sont hébergées."
+          ]
+        },
+        {
+          "title": "Durée de conservation",
+          "body": [
+            "Demandes et propositions qui n’aboutissent pas à une collaboration : 24 mois après notre dernier échange.",
+            "Dossiers clients et contrats : pendant toute la durée du contrat, puis aussi longtemps que l’exigent les obligations fiscales, comptables et autres obligations légales.",
+            "Candidatures : 12 mois après que le poste a été pourvu, sauf si vous acceptez une durée plus longue.",
+            "Newsletter : jusqu’à votre désinscription.",
+            "Journaux d’hébergement : conservés par notre hébergeur pendant une courte durée à des fins de sécurité, généralement 30 jours au maximum.",
+            "Lorsque les données ne sont plus nécessaires, nous les supprimons ou les anonymisons."
           ]
         },
         {
           "title": "Sécurité",
           "body": [
-            "Cette section décrira les mesures prises pour protéger les informations contre la perte et les accès non autorisés."
+            "Le site est servi par une connexion chiffrée (HTTPS). L’accès aux données personnelles est limité aux personnes qui en ont besoin, les comptes sont protégés et nous choisissons des prestataires qui appliquent des mesures de sécurité reconnues.",
+            "Aucun système n’est totalement sûr. En cas de violation affectant vos données personnelles, nous prendrons les mesures qui s’imposent et la notifierons à l’autorité de contrôle (NCSA) ainsi que, le cas échéant, aux personnes concernées, conformément à la loi."
           ]
         },
         {
           "title": "Vos droits",
           "body": [
-            "Cette section expliquera comment accéder à vos informations, les corriger ou les supprimer, vous opposer à leur utilisation et déposer une plainte auprès de l’autorité compétente au Rwanda."
+            "En vertu de la loi rwandaise sur la protection des données, vous avez le droit d’être informé de la manière dont vos données sont utilisées ; d’accéder à vos données et d’en obtenir une copie ; de faire rectifier les données inexactes ; d’obtenir l’effacement des données lorsqu’elles ne sont plus nécessaires ou ont été traitées de manière illicite ; de vous opposer au traitement, y compris à des fins de prospection commerciale ; d’obtenir la limitation du traitement ; de bénéficier de la portabilité de vos données ; et de ne pas faire l’objet d’une décision fondée exclusivement sur un traitement automatisé.",
+            "Lorsque nous nous fondons sur votre consentement, vous pouvez le retirer à tout moment ; ce retrait est sans effet sur ce qui a été fait auparavant.",
+            "Pour exercer l’un de ces droits, écrivez à {email}. Nous pourrons vous demander de confirmer votre identité et nous vous répondrons dans le délai fixé par la loi.",
+            "Si notre réponse ne vous satisfait pas, vous pouvez introduire une réclamation auprès de l’Office National pour la Cyber-Sécurité (NCSA), l’autorité rwandaise de protection des données."
           ]
         },
         {
           "title": "Cookies",
           "body": [
-            "Cette section listera les cookies et technologies similaires utilisés sur ce site et la manière de les contrôler."
+            "Ce site utilise uniquement les cookies nécessaires à son fonctionnement. Nous n’utilisons pas de cookies publicitaires ni de cookies de suivi et, si nous ajoutons des statistiques de fréquentation, elles fonctionneront sans cookies.",
+            "linse_cookie_consent : mémorise que vous avez vu et fermé l’avis sur les cookies, afin qu’il ne s’affiche plus. Conservé 1 an.",
+            "NEXT_LOCALE : mémorise la langue dans laquelle vous naviguez (anglais, français ou kinyarwanda). Conservé jusqu’à la fermeture de votre navigateur.",
+            "Vous pouvez supprimer ou bloquer les cookies dans les paramètres de votre navigateur ; le site continuera de fonctionner, mais l’avis pourra réapparaître et la langue pourra être réinitialisée."
           ]
         },
         {
-          "title": "Modifications de la politique",
+          "title": "Enfants",
           "body": [
-            "Cette section expliquera comment les mises à jour sont annoncées et quand elles prennent effet."
+            "Ce site et nos services s’adressent aux entreprises et aux adultes. Nous ne collectons pas sciemment de données personnelles auprès d’enfants de moins de 16 ans. Si vous pensez qu’un enfant nous a transmis des données personnelles, contactez-nous et nous les supprimerons."
+          ]
+        },
+        {
+          "title": "Modifications de cette politique",
+          "body": [
+            "Nous pouvons mettre à jour cette politique en cas d’évolution de nos services ou de la loi. La date indiquée en haut de la page correspond à la dernière version ; les modifications importantes seront signalées sur cette page."
           ]
         },
         {
           "title": "Contact",
           "body": [
-            "Questions sur cette politique : {email}."
+            "Linsetech Ltd, Kigali, Rwanda. E-mail : {email}."
           ]
         }
       ]
@@ -539,75 +574,80 @@
     "terms": {
       "meta": {
         "title": "Conditions d’utilisation",
-        "description": "Les conditions applicables au site Linse (plan provisoire)."
+        "description": "Les conditions applicables à l’utilisation du site Linse : contenu, devis, propriété intellectuelle, responsabilité et droit rwandais."
       },
       "title": "Conditions d’utilisation",
       "intro": {
         "heading": "Merci de lire attentivement ces conditions.",
         "body": [
-          "Texte provisoire. Les conditions d’utilisation seront fournies et modifiées dans le Studio.",
-          "Le plan ci-dessous liste les sections que couvriront les conditions définitives. D’ici leur publication, vos questions peuvent être adressées à {email}."
+          "Les présentes conditions s’appliquent à votre utilisation de ce site, exploité par Linsetech Ltd (« Linse », « nous »), Kigali, Rwanda. En utilisant le site, vous les acceptez. Si vous n’êtes pas d’accord, veuillez ne pas utiliser le site.",
+          "Dernière mise à jour : 10 novembre 2026. Vos questions peuvent être adressées à {email}."
         ]
       },
       "sections": [
         {
-          "title": "Acceptation",
-          "body": [
-            "Cette section expliquera qu’utiliser ce site vaut acceptation de ces conditions."
-          ]
-        },
-        {
           "title": "Utilisation du site",
           "body": [
-            "Cette section définira l’usage acceptable : aucun abus, ni tentative de perturber le site ou d’accéder à nos systèmes sans autorisation."
+            "Vous pouvez consulter et lire ce site, et en partager les liens, à des fins licites. Vous ne devez pas tenter d’en perturber le fonctionnement, d’accéder sans autorisation au site ou à nos systèmes, d’en extraire massivement le contenu, ni de l’utiliser pour envoyer des contenus illicites, nuisibles ou trompeurs.",
+            "Nous pouvons modifier, suspendre ou retirer toute partie du site à tout moment."
           ]
         },
         {
-          "title": "Services et devis",
+          "title": "Informations figurant sur le site",
           "body": [
-            "Cette section expliquera que les projets, produits et ventes de matériel relèvent d’accords écrits et de devis distincts."
+            "Nous veillons à ce que le site soit exact et à jour, mais son contenu constitue une information générale, fournie en l’état. Les articles et guides, y compris ceux portant sur la fiscalité, les paiements ou la protection des données, ne constituent pas des conseils juridiques, fiscaux ou financiers : vérifiez votre propre situation auprès d’un conseiller qualifié ou de l’autorité compétente."
+          ]
+        },
+        {
+          "title": "Devis, propositions et services",
+          "body": [
+            "Les informations figurant sur le site au sujet de nos services, produits, prix ou délais sont indicatives et ne constituent pas une offre. Un devis ou une proposition n’engage les parties qu’à compter de la signature d’un accord par les deux parties ou de la confirmation écrite d’une commande.",
+            "Nos services, nos produits, nos ventes de matériel et notre support sont régis par l’accord, la commande ou les conditions que nous fournissons à cet effet, qui prévalent sur les présentes conditions."
           ]
         },
         {
           "title": "Propriété intellectuelle",
           "body": [
-            "Cette section indiquera à qui appartiennent les contenus, la marque et les logiciels présentés sur ce site."
+            "Le site et son contenu (textes, design, code, images, rendus 3D et vidéos) appartiennent à Linsetech Ltd ou à ses concédants de licence et sont protégés par la loi. Linse, le symbole LS et les noms de nos produits sont nos marques.",
+            "Vous pouvez utiliser les fichiers de notre kit logo pour faire référence à Linse, conformément à la charte de marque publiée sur ce site. Toute autre utilisation de notre contenu ou de nos marques nécessite notre autorisation écrite."
           ]
         },
         {
-          "title": "Liens externes",
+          "title": "Ce que vous nous transmettez",
           "body": [
-            "Cette section traitera des liens vers d’autres sites, que nous ne contrôlons pas."
+            "Lorsque vous nous transmettez des informations au moyen d’un formulaire ou par e-mail, vous confirmez qu’elles sont exactes et que vous êtes en droit de les communiquer. Merci de ne pas envoyer d’informations confidentielles ni de mots de passe par les formulaires du site.",
+            "Nous utilisons les données personnelles comme décrit dans notre Politique de confidentialité."
           ]
         },
         {
-          "title": "Avertissement",
+          "title": "Liens vers des sites tiers",
           "body": [
-            "Cette section expliquera que les informations du site sont fournies à titre général et peuvent évoluer."
+            "Le site peut contenir des liens vers d’autres sites. Nous ne les contrôlons pas et ne sommes pas responsables de leur contenu, de leur disponibilité ni de leurs pratiques en matière de confidentialité."
           ]
         },
         {
-          "title": "Limitation de responsabilité",
+          "title": "Responsabilité",
           "body": [
-            "Cette section fixera les limites de notre responsabilité liée à l’utilisation de ce site."
+            "Dans la mesure permise par la loi, nous ne sommes pas responsables des pertes indirectes ou consécutives, ni des pertes de bénéfices, de chiffre d’affaires, de données ou d’activité, résultant de votre utilisation du site ou de la confiance que vous accordez à son contenu.",
+            "Aucune disposition des présentes conditions ne limite une responsabilité qui ne peut être limitée en vertu du droit rwandais."
           ]
         },
         {
           "title": "Droit applicable",
           "body": [
-            "Cette section indiquera le droit qui régit ces conditions et les juridictions compétentes."
+            "Les présentes conditions sont régies par le droit de la République du Rwanda. Tout litige sera porté devant les juridictions compétentes du Rwanda, après que nous aurons d’abord tenté de bonne foi de le résoudre ensemble."
           ]
         },
         {
           "title": "Modification des conditions",
           "body": [
-            "Cette section expliquera comment et quand ces conditions peuvent être mises à jour."
+            "Nous pouvons mettre à jour ces conditions de temps à autre. La date indiquée en haut de la page correspond à la dernière version ; en continuant d’utiliser le site après une modification, vous acceptez les conditions mises à jour."
           ]
         },
         {
           "title": "Contact",
           "body": [
-            "Questions sur ces conditions : {email}."
+            "Linsetech Ltd, Kigali, Rwanda. E-mail : {email}."
           ]
         }
       ]

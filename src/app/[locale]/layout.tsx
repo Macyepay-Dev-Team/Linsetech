@@ -14,7 +14,7 @@ import CookieBanner from "@/components/layout/CookieBanner";
 import { ContactProvider } from "@/components/layout/ContactContext";
 import LightBackdrop from "@/components/backdrop/LightBackdrop";
 import { site } from "@/content/site";
-import { JsonLd, OG_LOCALE, SITE_URL, THEME_COLOR, TITLE_TEMPLATE, organizationJsonLd, toLocale } from "@/lib/seo";
+import { JsonLd, OG_LOCALE, SITE_URL, THEME_COLOR, TITLE_TEMPLATE, organizationJsonLd, toLocale, websiteJsonLd } from "@/lib/seo";
 import "../globals.css";
 
 const archivo = Archivo({ subsets: ["latin"], variable: "--font-archivo", display: "swap" });
@@ -68,6 +68,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body className="min-h-full flex flex-col">
         <script id="pre-state" dangerouslySetInnerHTML={{ __html: PRELOAD_STATE }} />
         <JsonLd data={organizationJsonLd(tMeta("description"))} />
+        <JsonLd data={websiteJsonLd(locale, tMeta("description"))} />
         <NextIntlClientProvider>
           <ContactProvider>
             <SmoothScroll />

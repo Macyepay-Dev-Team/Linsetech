@@ -17,7 +17,7 @@ import WaveLinks from "@/components/sections/work/WaveLinks";
 import { ContactButton } from "@/components/sections/ContactButton";
 import { localizeProject, localizeProjects } from "@/components/sections/work/localize";
 import styles from "@/components/sections/work/case.module.css";
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, JsonLd, pageMetadata } from "@/lib/seo";
 import { CHAPTER_INDEX } from "@/components/sections/WorkPacing";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -99,6 +99,7 @@ export default async function ProjectPage({ params }: Props) {
   const tcat = await getTranslations({ locale, namespace: "workPage.categories" });
   const tcta = await getTranslations({ locale, namespace: "cta" });
   const tp = await getTranslations({ locale, namespace: "process" });
+  const tn = await getTranslations({ locale, namespace: "nav" });
   const closing = tcta("title");
   const cut = closing.lastIndexOf(",");
 
@@ -118,6 +119,7 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <div data-wave-scope className="relative isolate bg-[#020a07] text-off-white" style={{ clipPath: "inset(0)" }}>
+      <JsonLd data={breadcrumbJsonLd(locale, [{ name: tn("home"), path: "/" }, { name: tn("work"), path: "/work" }, { name: p.title, path: `/work/${p.slug}` }])} />
       <CaseBackdrop />
       {/* data-case-tint: CaseBackdrop reads where it ends to know how bright the space looks behind the header */}
       <div data-case-tint="" className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-[calc(100%-55svh)]" style={{ background: TINT }} aria-hidden />

@@ -1,8 +1,8 @@
 {
   "aboutPage": {
     "meta": {
-      "title": "About",
-      "description": "Linse is a Kigali-based technology company. We design and build software, publish our own products, distribute hardware and run IT for organisations that need all of it to work together."
+      "title": "About us: a technology company in Kigali",
+      "description": "One Kigali team for design, software, hardware and IT support. Meet the people behind Linse and MacyePay and see how we work with businesses in Rwanda."
     },
     "hero": {
       "title": "Building the digital backbone of growing businesses.",
@@ -75,14 +75,13 @@
         "aria": "On this page",
         "leadership": "Leadership",
         "team": "Team",
-        "partners": "Partners",
         "documents": "Documents",
         "contacts": "Contacts"
       },
       "headings": {
         "leadership": "Leadership",
         "team": "Team",
-        "partners": "Partners & certifications",
+        "partners": "Brands & registrations",
         "documents": "Company documents",
         "contacts": "Contacts"
       },
@@ -120,14 +119,11 @@
       "partners": {
         "sub": "We supply and support business-grade devices, and build on the platforms our clients already use.",
         "brands": "Hardware brands",
-        "platforms": "Platforms & partners",
-        "certs": "Certifications"
+        "certs": "Registrations"
       },
       "certifications": {
         "rdb": "RDB registered",
-        "rra": "RRA compliant",
-        "microsoft": "Microsoft Partner (pending)",
-        "iso": "ISO 27001 (in progress)"
+        "rra": "RRA compliant"
       },
       "documents": {
         "profile": "Company profile",

@@ -1,0 +1,252 @@
+{
+  "brandPage": {
+    "meta": {
+      "title": "Brand guidelines",
+      "description": "The Linse brand: logo, colours, typography, glass and metal materials, motion and voice, with the logo pack to download."
+    },
+    "hero": {
+      "title": "Brand",
+      "lead": "How Linse looks, moves and speaks: one system for the site, our products and every post.",
+      "cta": "Download the logo pack"
+    },
+    "rail": {
+      "label": "Brand guidelines",
+      "idea": "Idea",
+      "logo": "Logo",
+      "colour": "Colour",
+      "materials": "Materials",
+      "type": "Typography",
+      "graphic": "Graphic language",
+      "motion": "Motion",
+      "voice": "Voice",
+      "applications": "Applications",
+      "downloads": "Downloads"
+    },
+    "idea": {
+      "title": "Everything IT, under one roof",
+      "lead": "One team for the software, the devices it runs on and the support that keeps both working. The brand carries that idea in three ways.",
+      "items": {
+        "night": {
+          "title": "Night to light",
+          "text": "Pages open in a night green and resolve into light: complexity turned into clarity."
+        },
+        "metal": {
+          "title": "Metal",
+          "text": "Chrome and brushed aluminium stand for hardware: things built to last."
+        },
+        "glass": {
+          "title": "Glass",
+          "text": "Frosted and clear glass with a green glow stands for software: transparent and precise."
+        }
+      },
+      "together": "Together they make a device: a metal body with a glass screen. Every hero visual uses one or both."
+    },
+    "logo": {
+      "title": "Logo",
+      "lead": "The LS monogram and the Linse wordmark, set in Archivo SemiBold. Use the files from the logo pack; never redraw them.",
+      "tiles": {
+        "night": "Off-white on night (default)",
+        "light": "Ink on light",
+        "green": "Night on green",
+        "mark": "The mark alone: avatars, favicons, devices"
+      },
+      "rules": {
+        "space": {
+          "title": "Clear space",
+          "text": "The width of the L stem on every side."
+        },
+        "size": {
+          "title": "Minimum size",
+          "text": "Mark 16 px tall; horizontal lockup 72 px wide."
+        },
+        "legal": {
+          "title": "Legal name",
+          "text": "Linsetech Ltd, in documents, contracts and footers."
+        }
+      },
+      "dontsTitle": "Don't",
+      "donts": [
+        "Stretch or squash it",
+        "Rotate it",
+        "Outline it",
+        "Recolour it outside the palette",
+        "Set it on busy photos",
+        "Add shadows or effects other than the approved glass and metal"
+      ]
+    },
+    "colour": {
+      "title": "Colour",
+      "lead": "Night carries the brand, green is the signal. Keep green to about a tenth of any layout.",
+      "copy": "Copy",
+      "copied": "Copied",
+      "swatches": {
+        "night": {
+          "name": "Night",
+          "role": "Backgrounds"
+        },
+        "green": {
+          "name": "Linse Green",
+          "role": "Accent, markers, calls to action"
+        },
+        "offWhite": {
+          "name": "Off-white",
+          "role": "Type and lines on night"
+        },
+        "ink": {
+          "name": "Ink",
+          "role": "Type on light"
+        },
+        "paper": {
+          "name": "Paper",
+          "role": "Light sections, documents"
+        },
+        "mist": {
+          "name": "Mist",
+          "role": "Light posts and cards"
+        }
+      },
+      "scale": "Green scale",
+      "gradientsTitle": "Gradients",
+      "gradients": {
+        "nightfall": "Nightfall: page heroes",
+        "sweep": "Sweep: banners and covers",
+        "glow": "Glow: the night with light rising"
+      },
+      "ratioTitle": "Proportion",
+      "ratio": {
+        "night": "Night",
+        "neutral": "Off-white and greys",
+        "green": "Green"
+      },
+      "a11y": "Green on night passes for text (about 8.7:1). On light backgrounds, set green text in Green 600 (#15803D); bright green is for shapes and highlights only."
+    },
+    "materials": {
+      "title": "Glass and metal",
+      "lead": "Our two materials, rendered in a dark studio with an off-white key light and a green rim from below and behind. One hero object per visual.",
+      "items": {
+        "chrome": {
+          "title": "Chrome",
+          "text": "Polished, high-contrast reflections of a dark studio with a green-tinted environment. For hardware and the LS mark."
+        },
+        "glass": {
+          "title": "Glass",
+          "text": "Frosted or clear, thick, bevelled edges catching an off-white highlight, a faint green glow inside. For software, data and cards."
+        }
+      },
+      "combined": "Combined: a chrome frame holding a glass panel, the way a device holds its screen.",
+      "grain": "A 4–6 % film grain sits over dark visuals, never over text."
+    },
+    "type": {
+      "title": "Typography",
+      "lead": "Archivo for everything you read, Archivo Narrow in capitals for everything you scan. Both are free on Google Fonts.",
+      "sample": "Everything IT, under one roof.",
+      "narrowSample": "01 / Work · Hardware · Kigali",
+      "weights": "Regular 400 · Medium 500 · SemiBold 600",
+      "scaleTitle": "Scale",
+      "scale": {
+        "display": "Display",
+        "h2": "Section title",
+        "h3": "Card title",
+        "body": "Body",
+        "label": "Label"
+      },
+      "note": "Headlines are tight (leading 1.0–1.1, tracking −2 %). Kinyarwanda runs 15–20 % longer than English: leave room for it."
+    },
+    "graphic": {
+      "title": "Graphic language",
+      "lead": "Square corners everywhere, thin dashed lines, a small green square as a marker, and one square unit that builds grids, cards and motion.",
+      "units": {
+        "solid": "Solid",
+        "layered": "Layered",
+        "outline": "Dashed outline",
+        "grid": "Grid",
+        "glass": "Glass",
+        "chrome": "Chrome"
+      },
+      "elements": {
+        "dashed": {
+          "title": "Dashed lines",
+          "text": "1 px, off-white at 15 % on night, black at 15 % on light."
+        },
+        "marker": {
+          "title": "Marker",
+          "text": "A 6 px green square pins headings and lists."
+        },
+        "index": {
+          "title": "Index numbers",
+          "text": "01, 02… in Archivo Narrow, for steps, slides and sections."
+        },
+        "icons": {
+          "title": "Icons",
+          "text": "Line icons, 1.5 px stroke on a 24 px grid, square caps."
+        }
+      }
+    },
+    "motion": {
+      "title": "Motion",
+      "lead": "Things arrive fast and settle slowly. Text is revealed by line or character, 3D is scrubbed by scroll, and social loops last 6–10 seconds without a seam.",
+      "items": {
+        "expo": "Expo out: entrances, 0.6–1.2 s",
+        "inOutQuart": "In-out quart: page transitions",
+        "outQuad": "Out quad: small UI feedback"
+      },
+      "replay": "Replay"
+    },
+    "voice": {
+      "title": "Voice",
+      "lead": "We write like a good engineer explains: plainly, specifically, without hype.",
+      "items": {
+        "plain": {
+          "title": "Plain",
+          "text": "Short sentences and everyday words. Explain the term or drop it."
+        },
+        "specific": {
+          "title": "Specific",
+          "text": "Real numbers, real places, real steps. No numbers we can't stand behind."
+        },
+        "confident": {
+          "title": "Confident",
+          "text": "Say what we do and how. No \"revolutionary\", no \"best in Africa\"."
+        },
+        "local": {
+          "title": "Local",
+          "text": "English and Kinyarwanda, each written naturally, never translated word for word."
+        }
+      },
+      "doTitle": "Write",
+      "dontTitle": "Not",
+      "pairs": [
+        {
+          "do": "We configure every laptop before it leaves our workshop.",
+          "dont": "We deliver cutting-edge, best-in-class IT solutions."
+        },
+        {
+          "do": "A technician is on critical issues within the hour.",
+          "dont": "Lightning-fast, world-class support 24/7/365!"
+        }
+      ]
+    },
+    "applications": {
+      "title": "Applications",
+      "lead": "The same frame on every post: logo top left, a series label top right, a dashed footer with the address, one hero object. Night and light posts alternate, so the profile grid reads as a checkerboard.",
+      "social": "Social posts",
+      "sizes": "Feed 1080 × 1350 · Stories and reels 1080 × 1920 · X 1200 × 675 · LinkedIn link 1200 × 627",
+      "card": "Business card",
+      "signature": "Email signature",
+      "name": "Your name",
+      "role": "Your role",
+      "signatureLine": "Software, hardware and IT under one roof",
+      "device": "Device branding: the LS mark on the Linse POS terminal design"
+    },
+    "downloads": {
+      "title": "Downloads",
+      "items": {
+        "logos": "Logo pack: mark and lockups, SVG and PNG, four colours",
+        "guidelines": "Brand guidelines (PDF)"
+      },
+      "download": "Download",
+      "soon": "Coming soon",
+      "contact": "Questions about using the brand, or press requests: press@linsetech.com"
+    }
+  }
+}

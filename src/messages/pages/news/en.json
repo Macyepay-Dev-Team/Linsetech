@@ -1,7 +1,7 @@
 {
   "newsPage": {
-    "metaTitle": "News",
-    "metaDescription": "Company news, product updates, hardware guides, insights and press releases from Linse.",
+    "metaTitle": "News & guides on business tech in Rwanda",
+    "metaDescription": "Practical guides for Rwandan businesses on websites, mobile money, EBM, laptops and IT support, plus news from Linse and MacyePay.",
     "title": "Latest News",
     "featured": "Featured Blog",
     "recent": "Most Recent",
@@ -92,8 +92,8 @@
     }
   },
   "contactPage": {
-    "metaTitle": "Contact",
-    "metaDescription": "Email, phone, office hours and a project form to reach Linse in Kigali.",
+    "metaTitle": "Contact us: talk to our Kigali team",
+    "metaDescription": "Tell us about your project, hardware order or support need. Call, WhatsApp or write to our Kigali team and we will get back to you.",
     "title": "Contact Linse",
     "office": "Office",
     "phone": "Phone / WhatsApp",

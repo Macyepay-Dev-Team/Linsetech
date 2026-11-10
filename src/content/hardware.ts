@@ -6,5 +6,3 @@ export const featuredDevices = [
   { name: "Servers & storage", blurb: "Tower and rack servers, NAS and UPS for on-premise workloads.", tag: "Infrastructure" },
   { name: "Networking & security", blurb: "Ubiquiti and MikroTik networks, CCTV and access control, installed.", tag: "Networks" },
 ];
-
-export const partnerBadges = ["Microsoft", "Google Cloud", "AWS", "Sanity", "Vercel", "Flutter", "MTN MoMo", "Airtel Money", "RDB", "ISO 27001 (in progress)"];

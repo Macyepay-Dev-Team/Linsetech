@@ -13,6 +13,7 @@ next-env.d.ts
 # Blender renders and recolour outputs: reproducible from tools/blender/*.py and tools/bg (several GB)
 tools/blender/out/
 tools/bg/out/
+tools/social/out/
 __pycache__/
 *.pyc
 

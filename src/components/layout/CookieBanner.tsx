@@ -95,7 +95,7 @@ export default function CookieBanner() {
     >
       <p className={cn("font-narrow text-[12px] font-normal uppercase leading-[1.4] tracking-[0.08em]", light ? "text-[var(--black-subtle)]" : "text-[var(--off-white-subtle)]")}>
         {t("text")}{" "}
-        <Link href="/privacy" className={cn("underline", light ? "text-black" : "text-off-white")}>
+        <Link href="/privacy#section-9" className={cn("underline", light ? "text-black" : "text-off-white")}>
           {t("link")}
         </Link>
       </p>

@@ -1,8 +1,8 @@
 {
   "servicesPage": {
     "meta": {
-      "title": "Serivisi",
-      "description": "Igishushanyo, imbuga na porogaramu, sisitemu no kuzihuza, porogaramu dusohora, ibikoresho n’ikwirakwizwa, na serivisi za IT: serivisi esheshatu, ikipe imwe."
+      "title": "Serivisi za IT na software mu Rwanda",
+      "description": "Serivisi esheshatu z'itsinda rimwe i Kigali: design, imbuga n'apps, sisitemu na MoMo, MacyePay, mudasobwa n'ibikoresho, n'ubufasha bwa IT."
     },
     "hero": {
       "title": "IT yose, ahantu hamwe.",
@@ -101,7 +101,11 @@
             "q": "Mushobora kuvugurura ikirango gisanzwe?",
             "a": "Yego, kuva ku kuvugurura gato kugeza ku kirango gishya cyose: ikirango, imyandikire, amabara n’ingero."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Design ya UI/UX n'ibirango i Kigali",
+          "description": "Dushushanya porogaramu n'imbuga (UX/UI) n'ibirango by'ibicuruzwa by'ikoranabuhanga, bikora neza kuri telefoni na interineti yo mu Rwanda."
+        }
       },
       "web": {
         "title": "Imbuga & porogaramu",
@@ -152,7 +156,11 @@
             "q": "Twashobora guhindura ibikubiye ku rubuga ubwacu?",
             "a": "Yego. Dushyiraho CMS (Sanity mbere na mbere) kugira ngo ikipe yawe ihindure amapaji, amakuru n’ibicuruzwa nta muhanga."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Gukora imbuga za interineti n'apps mu Rwanda",
+          "description": "Dukora imbuga za interineti, web apps n'apps za Android na iOS i Kigali: zihuta kuri telefoni, zemera MoMo, mu Cyongereza, Igifaransa n'Ikinyarwanda."
+        }
       },
       "systems": {
         "title": "Sisitemu & guhuza",
@@ -203,7 +211,11 @@
             "q": "Mushobora gufata sisitemu yubatswe n’abandi?",
             "a": "Yego. Dutangira n’isuzuma, tugashyira ku murongo ibiri gukora, hanyuma tugategura kunoza."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Sisitemu, POS no kwishyura na MoMo",
+          "description": "Sisitemu z'ubucuruzi zikorana: POS, ERP n'ububiko, kwishyura na MTN MoMo na Airtel Money, no guhuza porogaramu musanganywe."
+        }
       },
       "software": {
         "title": "Porogaramu zacu",
@@ -254,7 +266,11 @@
             "q": "Mwakubakana natwe igicuruzwa?",
             "a": "Yego. Twubakana kandi dufatanya gutunga ibicuruzwa n’abafatanyabikorwa bazana isoko; tuvugishe."
           }
-        ]
+        ],
+        "meta": {
+          "title": "MacyePay: kwishyura mu byiciro",
+          "description": "MacyePay ifasha amaduka n'amabanki kugurisha telefoni, mudasobwa n'ibindi byishyurwa mu byiciro, n'amasezerano yemejwe na noteri na MoMo."
+        }
       },
       "hardware": {
         "title": "Ibikoresho & ikwirakwizwa",
@@ -305,7 +321,11 @@
             "q": "Mushobora gutanga igiciro cy’ibiro byose?",
             "a": "Yego: ibikoresho, umuyoboro, umutekano no kubishyiraho mu giciro kimwe. Saba urutonde."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Mudasobwa, POS n'ibikoresho bya IT mu Rwanda",
+          "description": "Mudasobwa z'akazi, seriveri, ibikoresho bya network, imashini za POS, printer na CCTV ku bigo, tubigeza aho muri hose mu Rwanda."
+        }
       },
       "it": {
         "title": "Serivisi za IT",
@@ -356,7 +376,11 @@
             "q": "Mufasha ku bikoresho mutagurishije?",
             "a": "Yego, nyuma yo gusuzuma vuba ibyo mufite."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Ubufasha bwa IT ku bigo i Kigali",
+          "description": "Twita kuri IT y'ikigo cyanyu: amasezerano y'ubufasha afite SLA, network, kubika amakuru (backup) n'abatekinisiye baza aho mukorera."
+        }
       }
     },
     "models": {
@@ -477,10 +501,6 @@
       "macyepay": {
         "tag": "Fintech · Igicuruzwa twasohoye",
         "blurb": "Kwishyura mu byiciro ku bigo byo mu Rwanda, bishingiye ku masezerano yemejwe na noteri, kwishyuza byikora no guhuzwa na CRB."
-      },
-      "clinic-hmis": {
-        "tag": "Sisitemu · Ubuzima",
-        "blurb": "Amadosiye y’abarwayi, farumasi, kwishyuza n’ubwishingizi muri sisitemu imwe y’imicungire y’ibitaro."
       },
       "retail-rollout": {
         "tag": "Ibikoresho · Ikwirakwizwa",

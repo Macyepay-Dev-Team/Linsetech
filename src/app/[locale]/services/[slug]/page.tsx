@@ -17,7 +17,7 @@ import { clips, slClip, type Clip } from "@/content/clips";
 import { getServices, getProjects } from "@/sanity/data";
 import { localizeProjects } from "@/components/sections/work/localize";
 import type { Locale } from "@/i18n/routing";
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, faqPageJsonLd, JsonLd, pageMetadata, serviceJsonLd } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -43,7 +43,9 @@ export async function generateMetadata({ params }: Props, parent: ResolvingMetad
   const s = services.find((x) => x.slug === slug);
   if (!s) return {};
   const c = serviceCopy(t, s);
-  return pageMetadata({ locale, path: `/services/${s.slug}`, title: c.title, description: c.intro }, parent);
+  // search titles and descriptions per service (docs/content/research/keywords.md), else the page's own title and intro
+  const meta = t.has(`services.${s.key}.meta.title`) ? { title: t(`services.${s.key}.meta.title`), description: t(`services.${s.key}.meta.description`) } : { title: c.title, description: c.intro };
+  return pageMetadata({ locale, path: `/services/${s.slug}`, ...meta }, parent);
 }
 
 /**
@@ -79,8 +81,14 @@ export default async function ServicePage({ params }: Props) {
       blurb: t.has(`projects.${p.slug}.blurb`) ? t(`projects.${p.slug}.blurb`) : p.blurb,
     }));
 
+  const tn = await getTranslations("nav");
+  const path = `/services/${s.slug}`;
+
   return (
     <>
+      <JsonLd data={serviceJsonLd({ locale, path, name: c.title, description: c.intro, type: c.title })} />
+      <JsonLd data={breadcrumbJsonLd(locale, [{ name: tn("home"), path: "/" }, { name: tn("services"), path: "/services" }, { name: c.title, path }])} />
+      {c.faqs.length > 0 && <JsonLd data={faqPageJsonLd(c.faqs)} />}
       <PageHero
         variant="opportunity"
         clip={HERO_CLIP[s.key]}

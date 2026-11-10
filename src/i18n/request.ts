@@ -6,7 +6,7 @@ import { routing } from "./routing";
  * Messages = the shared file (messages/<locale>.json) deep-merged with one file per page group
  * (messages/pages/<group>/<locale>.json), so each page group owns its own copy and can be edited independently.
  */
-const GROUPS = ["about", "services", "news", "work", "company"] as const;
+const GROUPS = ["about", "services", "news", "work", "company", "brand"] as const;
 
 type Msgs = Record<string, unknown>;
 const isObj = (v: unknown): v is Msgs => typeof v === "object" && v !== null && !Array.isArray(v);

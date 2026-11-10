@@ -463,75 +463,110 @@
     "privacy": {
       "meta": {
         "title": "Politiki y’ibanga",
-        "description": "Uko Linse ikusanya, ikoresha kandi irinda amakuru bwite (imbanzirizamushinga)."
+        "description": "Uko Linsetech Ltd ikusanya, ikoresha, ibika kandi ikarinda amakuru bwite, uburenganzira bwawe hakurikijwe itegeko ry’u Rwanda ryerekeye kurinda amakuru bwite, na cookies uru rubuga rukoresha."
       },
       "title": "Politiki y’ibanga",
       "intro": {
         "heading": "Ibanga ryawe rifite agaciro kuri twe.",
         "body": [
-          "Inyandiko y’agateganyo. Politiki y’ibanga izatangwa kandi ihindurirwe muri Studio.",
-          "Urutonde rukurikira rugaragaza ibice politiki ya nyuma izaba ikubiyemo. Mbere y’uko isohoka, ibibazo ku makuru bwite byoherezwa kuri {email}."
+          "Iyi politiki isobanura amakuru bwite Linsetech Ltd (“Linse”, “twe”) ikusanya binyuze kuri uru rubuga n’igihe utwandikiye, impamvu tuyakoresha, abayahabwa, igihe tuyabika, n’uburenganzira ufite mu Rwanda hakurikijwe Itegeko N° 058/2021 ryo ku wa 13/10/2021 ryerekeye kurinda amakuru bwite n’imibereho bwite by’umuntu.",
+          "Iheruka kuvugururwa: 10 Ugushyingo 2026. Ibibazo kuri iyi politiki cyangwa ku makuru yawe wabyohereza kuri {email}."
         ]
       },
       "sections": [
         {
           "title": "Abo turi bo",
           "body": [
-            "Iki gice kizagaragaza Linsetech Ltd (“Linse”), Kigali, u Rwanda, nk’ishinzwe amakuru bwite akusanywa binyuze kuri uru rubuga, n’uko wayigeraho."
+            "Linsetech Ltd ni ikigo cy’ubucuruzi cyanditswe mu Rwanda, gikorera i Kigali. Dushushanya kandi twubaka porogaramu, dushyira ku isoko ibicuruzwa byacu bwite, ducuruza ibikoresho by’ikoranabuhanga bigenewe ibigo, kandi dutanga serivisi z’ikoranabuhanga (IT).",
+            "Ku makuru bwite avugwa muri iyi politiki, Linsetech Ltd ni yo mugenzuzi w’amakuru: ni twe tugena impamvu n’uburyo akoreshwa. Watugeraho kuri {email}."
           ]
         },
         {
           "title": "Amakuru dukusanya",
           "body": [
-            "Iki gice kizerekana amakuru dukusanya: ayo wohereza ukoresheje ifishi (izina, imeyili, ikigo n’ubutumwa) n’amakuru y’ikoranabuhanga nk’impapuro wasuye n’ubwoko bw’igikoresho."
+            "Ayo utwoherereza. Iyo ukoresheje ifishi yo kutwandikira cyangwa iy’umushinga: izina ryawe, imeyili yawe, ikigo ukorera (si ngombwa), ubwoko bw’ubufasha ukeneye n’ubutumwa bwawe. Iyo usaba akazi: izina ryawe, imeyili yawe, umwanya usaba n’aderesi ya CV cyangwa portfolio yawe. Iyo wiyandikishije ku butumwa bwacu bw’amakuru (newsletter): imeyili yawe kandi, ubishatse, izina bwite n’izina ry’umuryango, ikigo ukorera n’ibyo wahisemo kwakira.",
+            "Iyo dukorana. Aho abantu dukorana na bo babarizwa, n’amakuru akenewe kugira ngo dutange inyemezabiciro, tugeze ku bakiriya serivisi n’ibicuruzwa byacu, tubishyuze kandi tubahe ubufasha.",
+            "Amakuru ya tekiniki. Iyo usuye urubuga, ikigo cyakira urubuga rwacu kibika amakuru y’ibanze ya tekiniki, nka aderesi ya IP yawe, ubwoko bwa musurambuga (browser) ukoresha n’impapuro wasabye, kugira ngo urubuga rugere ku barusura kandi rukomeze kurindwa. Ntidukoresha cookies zo kwamamaza cyangwa zikurikirana abasura urubuga."
           ]
         },
         {
-          "title": "Uko dukoresha amakuru",
+          "title": "Uko dukoresha amakuru n’impamvu",
           "body": [
-            "Iki gice kizasobanura impamvu tuyakoresha: gusubiza ibibazo, gutanga serivisi ku masezerano, kunoza urubuga no kubahiriza amategeko."
+            "Gusubiza ubusabe bwawe no gutegura inyemezabiciro cyangwa inyandiko y’umushinga: ibi ni ngombwa kugira ngo, ku busabe bwawe, dufate ingamba zibanziriza amasezerano.",
+            "Kukugezaho ibyo uguze kuri twe, kubikwishyuza no kuguha ubufasha bubikurikirana: ibi ni ngombwa mu gushyira mu bikorwa amasezerano dufitanye nawe cyangwa n’ikigo ukorera.",
+            "Gusuzuma ubusabe bwawe bw’akazi: ni ngombwa kugira ngo, ku busabe bwawe, dufate ingamba zikenewe; amakuru yawe tuyakoresha gusa mu gutoranya abakozi.",
+            "Kukoherereza ubutumwa bwacu bw’amakuru: bishingiye ku kwemera kwawe, kandi ushobora kwisubiraho igihe icyo ari cyo cyose ukoresheje ihuza ryo kwiyandukuza cyangwa utwandikiye.",
+            "Gucunga uru rubuga, kururinda no kurunoza, no kubika inyandiko z’ibikorwa byacu by’ubucuruzi: bishingiye ku nyungu zacu zemewe n’amategeko, no ku nshingano zacu zishingiye ku mategeko (urugero, amategeko agenga imisoro n’ibaruramari).",
+            "Ntitugurisha amakuru bwite, kandi ntidufata ibyemezo bikureba bishingiye gusa ku itunganywa ry’amakuru ryikoresha."
           ]
         },
         {
-          "title": "Gusangiza abandi",
+          "title": "Abahabwa amakuru",
           "body": [
-            "Iki gice kizavuga ubwoko bw’abatanga serivisi badufasha gukoresha urubuga na serivisi zacu, n’igihe amategeko adusaba gutanga amakuru."
+            "Ikipe yacu, ariko gusa abayakeneye kugira ngo bakore akazi kabo.",
+            "Abatanga serivisi batunganya amakuru mu izina ryacu, hashingiwe ku masezerano kandi bakurikije amabwiriza yacu gusa: ikigo cyakira urubuga rwacu (Vercel Inc.), ikigo kiduha serivisi z’imeyili kitugezaho ubutumwa bwoherejwe binyuze mu mafishi y’urubuga, ndetse n’ikigo cyohereza ubutumwa bwacu bw’amakuru, niba wariyandikishije.",
+            "Inzego zibifitiye ububasha, inkiko cyangwa abajyanama bacu, iyo amategeko abisaba cyangwa kugira ngo dutange ikirego, tugikurikirane cyangwa twiregure mu nkiko."
+          ]
+        },
+        {
+          "title": "Kubika amakuru hanze y’u Rwanda",
+          "body": [
+            "Bamwe mu badutangira serivisi, barimo n’ikigo cyakira urubuga rwacu, babika cyangwa batunganya amakuru hanze y’u Rwanda. Itegeko riteganya ko amakuru bwite abikwa mu Rwanda, keretse kuyabika hanze y’Igihugu byemewe n’Urwego rw’Igihugu rushinzwe Umutekano w’Ibijyanye n’Ikoranabuhanga mu Itangazabumenyi n’Itumanaho (NCSA).",
+            "Tubika kandi twohereza amakuru bwite hanze y’u Rwanda gusa mu buryo itegeko ryemera, hamwe n’ingamba zikwiye zo kuyarinda twashyizeho na buri utanga serivisi. Twandikire kuri {email} niba ushaka kumenya aho amakuru yawe abitswe."
           ]
         },
         {
           "title": "Igihe tubika amakuru",
           "body": [
-            "Iki gice kizagaragaza igihe buri bwoko bw’amakuru bubikwa n’uko busibwa."
+            "Ubusabe n’inyandiko z’imishinga bitavuyemo akazi: amezi 24 uhereye igihe duheruka kuvugana.",
+            "Inyandiko z’abakiriya n’iz’amasezerano: mu gihe cyose amasezerano amara, na nyuma yaho igihe cyose amategeko agenga imisoro, ibaruramari n’izindi nshingano zishingiye ku mategeko abisaba.",
+            "Ubusabe bw’akazi: amezi 12 nyuma y’uko umwanya ubonye umukozi, keretse wemeye ko bibikwa igihe kirekire kurushaho.",
+            "Ubutumwa bw’amakuru: kugeza igihe wiyandukuriye.",
+            "Inyandiko za tekiniki z’urubuga (logs): ikigo cyakira urubuga rwacu kizibika igihe gito ku mpamvu z’umutekano, akenshi kitarenze iminsi 30.",
+            "Iyo amakuru atakiri ngombwa, turayasiba cyangwa tukayahindura ku buryo atakigaragaza nyirayo."
           ]
         },
         {
           "title": "Umutekano",
           "body": [
-            "Iki gice kizasobanura ingamba dufata mu kurinda amakuru kubura cyangwa kugerwaho n’abatabyemerewe."
+            "Uru rubuga rugera ku barusura binyuze mu ihuza rihishe imisomere y’amakuru (HTTPS). Amakuru bwite agerwaho gusa n’abantu bayakeneye, konti zirinzwe, kandi duhitamo abatanga serivisi bakoresha ingamba z’umutekano zemewe.",
+            "Nta sisitemu n’imwe ifite umutekano usesuye. Haramutse habayeho ivogerwa ry’amakuru bwite yawe, tuzafata ingamba zikwiye kandi tubimenyeshe NCSA ndetse, aho bisabwa, n’abantu bireba, nk’uko itegeko ribiteganya."
           ]
         },
         {
           "title": "Uburenganzira bwawe",
           "body": [
-            "Iki gice kizasobanura uko wabona amakuru yawe, uko wayakosora cyangwa ukayasiba, uko wanga ikoreshwa ryayo n’uko watanga ikirego ku rwego rubishinzwe mu Rwanda."
+            "Hakurikijwe itegeko ry’u Rwanda ryerekeye kurinda amakuru bwite, ufite uburenganzira bwo kumenyeshwa uko amakuru yawe akoreshwa; kubona amakuru yawe no guhabwa kopi yayo; gusaba ko amakuru atari yo akosorwa; gusaba ko amakuru asibwa iyo atakiri ngombwa cyangwa yatunganyijwe mu buryo bunyuranyije n’amategeko; gutambamira itunganywa ryayo, harimo n’irigamije kwamamaza mu buryo butaziguye; kubuza itunganywa ryayo; gusubizwa no guhererekanya amakuru bwite yawe; no kutagengwa n’icyemezo gifatwa hashingiwe gusa ku itunganywa ry’amakuru ryikoresha.",
+            "Iyo dushingira ku kwemera kwawe, ushobora kwisubiraho igihe icyo ari cyo cyose; ibyo ntibigira ingaruka ku byakozwe mbere yaho.",
+            "Kugira ngo ukoreshe ubwo burenganzira ubwo ari bwo bwose, andika kuri {email}. Dushobora kugusaba kwemeza umwirondoro wawe, kandi tuzagusubiza mu gihe giteganywa n’itegeko.",
+            "Niba igisubizo cyacu kitakunyuze, ushobora gutanga ikirego ku Rwego rw’Igihugu rushinzwe Umutekano w’Ibijyanye n’Ikoranabuhanga mu Itangazabumenyi n’Itumanaho (NCSA), ari rwo rwego rugenzura ibijyanye no kurinda amakuru bwite mu Rwanda."
           ]
         },
         {
           "title": "Cookies",
           "body": [
-            "Iki gice kizerekana cookies n’ikoranabuhanga risa nazo bikoreshwa kuri uru rubuga n’uko wabigenzura."
+            "Uru rubuga rukoresha gusa cookies rukeneye kugira ngo rukore. Ntidukoresha cookies zo kwamamaza cyangwa zikurikirana abasura urubuga, kandi nitwongeraho uburyo bwo kubara abasura urubuga, buzakora nta cookies bukoresheje.",
+            "linse_cookie_consent: yibuka ko wabonye kandi ugafunga itangazo kuri cookies, kugira ngo ritongera kugaragara. Ibikwa umwaka 1.",
+            "NEXT_LOCALE: yibuka ururimi usuramo urubuga (Icyongereza, Igifaransa cyangwa Ikinyarwanda). Ibikwa kugeza igihe ufunze musurambuga (browser) yawe.",
+            "Ushobora gusiba cyangwa guhagarika cookies mu igenamiterere rya musurambuga yawe; urubuga ruzakomeza gukora, ariko itangazo rishobora kongera kugaragara kandi ururimi rugasubira ku rw’ibanze."
+          ]
+        },
+        {
+          "title": "Abana",
+          "body": [
+            "Uru rubuga na serivisi zacu bigenewe ibigo n’abantu bakuru. Ntidukusanya tubizi amakuru bwite y’abana bari munsi y’imyaka 16. Niba utekereza ko umwana yatwoherereje amakuru bwite, twandikire, tuzayasiba."
           ]
         },
         {
           "title": "Impinduka kuri iyi politiki",
           "body": [
-            "Iki gice kizasobanura uko impinduka zitangazwa n’igihe zitangira gukurikizwa."
+            "Dushobora kuvugurura iyi politiki igihe serivisi zacu cyangwa amategeko bihindutse. Itariki iri hejuru igaragaza inyandiko iheruka; impinduka z’ingenzi zizagaragazwa ku buryo bwihariye kuri uru rupapuro."
           ]
         },
         {
           "title": "Twandikire",
           "body": [
-            "Ibibazo kuri iyi politiki: {email}."
+            "Linsetech Ltd, Kigali, u Rwanda. Imeyili: {email}."
           ]
         }
       ]
@@ -539,75 +574,80 @@
     "terms": {
       "meta": {
         "title": "Amabwiriza y’ikoreshwa",
-        "description": "Amabwiriza agenga urubuga rwa Linse (imbanzirizamushinga)."
+        "description": "Amabwiriza akurikizwa iyo ukoresha urubuga rwa Linse: ibirukubiyeho, inyemezabiciro, umutungo bwite mu by’ubwenge, uburyozwe n’amategeko y’u Rwanda."
       },
       "title": "Amabwiriza y’ikoreshwa",
       "intro": {
         "heading": "Turagusaba gusoma aya mabwiriza witonze.",
         "body": [
-          "Inyandiko y’agateganyo. Amabwiriza y’ikoreshwa azatangwa kandi ahindurirwe muri Studio.",
-          "Urutonde rukurikira rugaragaza ibice amabwiriza ya nyuma azaba akubiyemo. Mbere y’uko asohoka, ibibazo byoherezwa kuri {email}."
+          "Aya mabwiriza akurikizwa iyo ukoresha uru rubuga, rucungwa na Linsetech Ltd (“Linse”, “twe”), Kigali, u Rwanda. Ukoresheje urubuga, uba uyemeye. Niba utayemera, turagusaba kudakoresha urubuga.",
+          "Aheruka kuvugururwa: 10 Ugushyingo 2026. Ibibazo wabyohereza kuri {email}."
         ]
       },
       "sections": [
         {
-          "title": "Kwemera",
-          "body": [
-            "Iki gice kizasobanura ko gukoresha uru rubuga bivuze kwemera aya mabwiriza."
-          ]
-        },
-        {
           "title": "Ikoreshwa ry’urubuga",
           "body": [
-            "Iki gice kizagaragaza ikoreshwa ryemewe: nta gukoresha nabi, nta kugerageza guhungabanya urubuga cyangwa kwinjira muri sisitemu zacu nta ruhushya."
+            "Ushobora gusura uru rubuga, gusoma ibirurimo no gusangiza abandi imiyoboro yarwo, ku mpamvu zemewe n’amategeko. Ntiwemerewe kugerageza kuruhungabanya, kwinjira mu rubuga cyangwa muri sisitemu zacu nta ruhushya, gukusanya ibirurimo ku bwinshi mu buryo bwikora, cyangwa kurukoresha wohereza ibintu binyuranyije n’amategeko, byangiza cyangwa biyobya.",
+            "Dushobora guhindura, guhagarika by’agateganyo cyangwa gukuraho igice icyo ari cyo cyose cy’urubuga igihe icyo ari cyo cyose."
           ]
         },
         {
-          "title": "Serivisi n’ibiciro",
+          "title": "Amakuru ari ku rubuga",
           "body": [
-            "Iki gice kizasobanura ko imishinga, ibicuruzwa n’igurisha ry’ibikoresho bigengwa n’amasezerano yanditse n’inyemezabiciro byihariye."
+            "Duharanira ko ibiri ku rubuga biba ari ukuri kandi bigezweho, ariko ibirukubiyeho ni amakuru rusange, atangwa uko ari. Inyandiko n’imfashanyigisho, harimo n’izivuga ku misoro, ku kwishyura cyangwa ku kurinda amakuru bwite, si inama mu by’amategeko, iz’imisoro cyangwa iz’imari: suzuma uko ibyawe byifashe ubifashijwemo n’umujyanama ubifitiye ubushobozi cyangwa urwego rubishinzwe."
+          ]
+        },
+        {
+          "title": "Inyemezabiciro, imishinga na serivisi",
+          "body": [
+            "Amakuru ari ku rubuga yerekeye serivisi zacu, ibicuruzwa, ibiciro cyangwa igihe bitwara ni ayo kumenyesha gusa, ntabwo ari icyifuzo cyo kugirana amasezerano. Inyemezabiciro cyangwa inyandiko y’umushinga bihinduka itegeko ku mpande zombi gusa iyo zashyize umukono ku masezerano, cyangwa iyo itumiza ryemejwe mu nyandiko.",
+            "Serivisi zacu, ibicuruzwa, igurisha ry’ibikoresho n’ubufasha bigengwa n’amasezerano, itumiza cyangwa amabwiriza tubitangira, kandi ni byo byitabwaho mbere y’aya mabwiriza."
           ]
         },
         {
           "title": "Umutungo bwite mu by’ubwenge",
           "body": [
-            "Iki gice kizagaragaza nyir’ibikubiye ku rubuga, ikirango na porogaramu zigaragara kuri uru rubuga."
+            "Urubuga n’ibirukubiyeho (inyandiko, igishushanyo, kode, amafoto, amashusho ya 3D na videwo) ni ibya Linsetech Ltd cyangwa ibya ba nyir’uburenganzira baduhaye uruhushya, kandi birinzwe n’amategeko. Linse, ikimenyetso LS n’amazina y’ibicuruzwa byacu ni ibirango byacu by’ubucuruzi.",
+            "Ushobora gukoresha amadosiye ari mu ipaki ya logo yacu kugira ngo uvuge kuri Linse, ukurikije amabwiriza y’ikirango ari kuri uru rubuga. Ubundi buryo bwose bwo gukoresha ibiri ku rubuga cyangwa ibirango byacu busaba uruhushya rwacu rwanditse."
+          ]
+        },
+        {
+          "title": "Ibyo utwoherereza",
+          "body": [
+            "Iyo utwoherereje amakuru ukoresheje ifishi cyangwa imeyili, uba wemeje ko ari ukuri kandi ko ufite uburenganzira bwo kuyatanga. Turagusaba kutohereza amakuru y’ibanga cyangwa amagambo banga ukoresheje amafishi y’urubuga.",
+            "Amakuru bwite tuyakoresha nk’uko bisobanurwa muri Politiki y’ibanga yacu."
           ]
         },
         {
           "title": "Imiyoboro y’izindi mbuga",
           "body": [
-            "Iki gice kizavuga ku miyoboro ijya ku zindi mbuga tutagenzura."
+            "Uru rubuga rushobora kuba rufite imiyoboro ijya ku zindi mbuga. Ntituzigenzura kandi ntituryozwa ibizikubiyeho, kuboneka kwazo cyangwa uburyo zifata amakuru bwite."
           ]
         },
         {
-          "title": "Itangazo",
+          "title": "Uburyozwe",
           "body": [
-            "Iki gice kizasobanura ko amakuru ari ku rubuga atangwa muri rusange kandi ashobora guhinduka."
-          ]
-        },
-        {
-          "title": "Imbibi z’uburyozwe",
-          "body": [
-            "Iki gice kizagaragaza imbibi z’uburyozwe bwacu ku ikoreshwa ry’uru rubuga."
+            "Mu rugero amategeko yemera, ntituryozwa igihombo icyo ari cyo cyose kiziguye cyangwa gikurikiraho, cyangwa itakara ry’inyungu, ry’amafaranga yinjira, ry’amakuru cyangwa ry’ibikorwa by’ubucuruzi, bikomoka ku ikoreshwa ryawe ry’urubuga cyangwa ku kwizera ibirukubiyeho.",
+            "Nta kintu na kimwe muri aya mabwiriza kigabanya uburyozwe budashobora kugabanywa hakurikijwe amategeko y’u Rwanda."
           ]
         },
         {
           "title": "Amategeko akurikizwa",
           "body": [
-            "Iki gice kizagaragaza amategeko agenga aya mabwiriza n’inkiko zikemura amakimbirane."
+            "Aya mabwiriza agengwa n’amategeko ya Repubulika y’u Rwanda. Amakimbirane ayo ari yo yose azashyikirizwa inkiko zibifitiye ububasha zo mu Rwanda, nyuma y’uko tubanje kugerageza kuyakemura hamwe, mu bwumvikane no mu bunyangamugayo."
           ]
         },
         {
           "title": "Impinduka ku mabwiriza",
           "body": [
-            "Iki gice kizasobanura uko n’igihe aya mabwiriza ashobora kuvugururwa."
+            "Dushobora kuvugurura aya mabwiriza rimwe na rimwe. Itariki iri hejuru igaragaza inyandiko iheruka; gukomeza gukoresha urubuga nyuma y’impinduka bisobanura ko wemeye amabwiriza avuguruye."
           ]
         },
         {
           "title": "Twandikire",
           "body": [
-            "Ibibazo kuri aya mabwiriza: {email}."
+            "Linsetech Ltd, Kigali, u Rwanda. Imeyili: {email}."
           ]
         }
       ]

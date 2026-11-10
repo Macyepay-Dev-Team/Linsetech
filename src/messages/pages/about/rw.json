@@ -1,8 +1,8 @@
 {
   "aboutPage": {
     "meta": {
-      "title": "Abo turi bo",
-      "description": "Linse ni ikigo cy’ikoranabuhanga gikorera i Kigali. Dukora kandi twubaka porogaramu, dusohora ibicuruzwa byacu, dukwirakwiza ibikoresho kandi ducunga IT y’ibigo bikeneye ko byose bikorana."
+      "title": "Abo turi bo: ikigo cy'ikoranabuhanga",
+      "description": "Itsinda rimwe i Kigali rikora design, software, mudasobwa n'ubufasha bwa IT. Menya abari inyuma ya Linse na MacyePay n'uko dukorana n'ibigo."
     },
     "hero": {
       "title": "Twubaka urwego rwa digitale rw’ibigo bikura.",
@@ -75,14 +75,13 @@
         "aria": "Kuri uru rupapuro",
         "leadership": "Ubuyobozi",
         "team": "Ikipe",
-        "partners": "Abafatanyabikorwa",
         "documents": "Inyandiko",
         "contacts": "Aho utubona"
       },
       "headings": {
         "leadership": "Ubuyobozi",
         "team": "Ikipe",
-        "partners": "Abafatanyabikorwa & impamyabushobozi",
+        "partners": "Ibirango n’iyandikwa",
         "documents": "Inyandiko z’ikigo",
         "contacts": "Aho utubona"
       },
@@ -120,14 +119,11 @@
       "partners": {
         "sub": "Dutanga kandi twita ku bikoresho by’umwuga, tukubaka ku mbuga abakiriya bacu basanzwe bakoresha.",
         "brands": "Ibirango by’ibikoresho",
-        "platforms": "Imbuga n’abafatanyabikorwa",
-        "certs": "Impamyabushobozi"
+        "certs": "Iyandikwa"
       },
       "certifications": {
         "rdb": "Yanditswe muri RDB",
-        "rra": "Yubahiriza amabwiriza ya RRA",
-        "microsoft": "Umufatanyabikorwa wa Microsoft (biri gukorwa)",
-        "iso": "ISO 27001 (biri gukorwa)"
+        "rra": "Yubahiriza amabwiriza ya RRA"
       },
       "documents": {
         "profile": "Umwirondoro w’ikigo",

@@ -95,48 +95,6 @@ export const projects: Project[] = [
     url: "https://macyepay.com",
   },
   {
-    slug: "clinic-hmis",
-    title: "Clinic HMIS",
-    client: "Sample client",
-    place: "Kigali, Rwanda",
-    tag: "Systems · Health",
-    category: "systems",
-    year: "2025",
-    blurb: "Patient records, pharmacy, billing and insurance claims in one hospital management system.",
-    summary:
-      "A sample case study that shows how a systems project is presented here: registration, consultations, pharmacy, billing and insurance claims brought into one hospital management system. It stands in for a real project until one is published from the Studio.",
-    shape: "portrait",
-    cover: "/work/clinic-hmis/cover.jpg",
-    accent: "#0f5132",
-    result: { value: "−40%", label: "Time per patient visit (sample figure)" },
-    stats: [
-      { value: "12", label: "Departments connected" },
-      { value: "3", label: "Insurers integrated" },
-      { value: "24/7", label: "Support" },
-    ],
-    meta: { scope: "Discovery · UX · Web app · Integrations", period: "2025", role: "Design & build", stack: ["React", "Node.js", "PostgreSQL", "HL7 / FHIR"] },
-    delivered: [
-      "Registration desk: one patient record, found by ID or phone number on every visit.",
-      "Consultation and pharmacy: prescriptions flow from the doctor to the dispensary and stock.",
-      "Billing and claims: invoices split between patient and insurer, claims sent electronically.",
-    ],
-    screens: [
-      { src: "/work/clinic-hmis/cover.jpg", caption: "Outpatient overview (sample screen)" },
-      { src: null, caption: "Pharmacy and stock" },
-      { src: null, caption: "Billing and insurance claims" },
-    ],
-    journey: [
-      { title: "Register", text: "The patient is identified once; the record follows them to every department." },
-      { title: "Consult", text: "Doctors see history, results and prescriptions on one screen." },
-      { title: "Bill", text: "The visit closes with one invoice and an insurance claim sent automatically." },
-    ],
-    engineering: [
-      { title: "One patient record", text: "Every department reads and writes the same record, with role-based access." },
-      { title: "Standards first", text: "Lab and insurer integrations use HL7 / FHIR messages instead of one-off exports." },
-    ],
-    placeholder: true,
-  },
-  {
     slug: "retail-rollout",
     title: "Retail POS rollout",
     client: "Sample client",

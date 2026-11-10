@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Linse — Software, systems and hardware",
-    "description": "Linse designs, builds and owns software, integrates systems and distributes hardware — all IT activities, engineered in Rwanda."
+    "title": "Software, Systems & IT Company in Kigali — Linse",
+    "description": "Linse designs and builds websites, apps and business systems, supplies business hardware and runs IT support for companies across Rwanda."
   },
   "cookies": {
     "label": "Cookie notice",
@@ -223,10 +223,6 @@
     "catalogue": "Request the catalogue",
     "learn": "Learn more"
   },
-  "partners": {
-    "eyebrow": "Partners",
-    "title": "Partnered with the best."
-  },
   "news": {
     "eyebrow": "Insights from the blog",
     "title": "Latest News",
@@ -290,8 +286,8 @@
     "company": {
       "contact": "Contact",
       "careers": "Careers",
-      "partners": "Partners",
-      "support": "Support"
+      "support": "Support",
+      "brand": "Brand"
     },
     "legal": {
       "rights": "© {year} Linsetech Ltd. All rights reserved.",
@@ -341,7 +337,7 @@
       "rail": {
         "leadership": "Leadership",
         "team": "Team",
-        "partners": "Partners & certifications",
+        "partners": "Brands & registrations",
         "documents": "Company documents",
         "contacts": "Contacts"
       },

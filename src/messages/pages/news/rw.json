@@ -1,7 +1,7 @@
 {
   "newsPage": {
-    "metaTitle": "Amakuru",
-    "metaDescription": "Amakuru y’ikigo, ibishya ku bicuruzwa, inama ku bikoresho, ubusesenguzi n’amatangazo ya Linse.",
+    "metaTitle": "Amakuru n'inama ku ikoranabuhanga",
+    "metaDescription": "Inama zifatika ku bigo byo mu Rwanda: imbuga za interineti, MoMo, EBM, mudasobwa n'ubufasha bwa IT, n'amakuru ya Linse na MacyePay.",
     "title": "Amakuru mashya",
     "featured": "Inkuru yatoranyijwe",
     "recent": "Iziheruka",
@@ -92,8 +92,8 @@
     }
   },
   "contactPage": {
-    "metaTitle": "Twandikire",
-    "metaDescription": "Imeyili, telefoni, amasaha y’akazi n’ifishi y’umushinga kugira ngo uvugane na Linse i Kigali.",
+    "metaTitle": "Twandikire: vugana n'itsinda ryacu i Kigali",
+    "metaDescription": "Tubwire umushinga wanyu, ibikoresho mukeneye cyangwa ubufasha bwa IT. Duhamagare cyangwa utwandikire kuri WhatsApp.",
     "title": "Vugana na Linse",
     "office": "Ibiro",
     "phone": "Telefoni / WhatsApp",

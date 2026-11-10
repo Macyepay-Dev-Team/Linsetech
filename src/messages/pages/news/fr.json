@@ -1,7 +1,7 @@
 {
   "newsPage": {
-    "metaTitle": "Actualités",
-    "metaDescription": "Actualités de l’entreprise, nouveautés produits, guides matériel, analyses et communiqués de Linse.",
+    "metaTitle": "Actualités et guides tech au Rwanda",
+    "metaDescription": "Guides pratiques pour les entreprises au Rwanda : sites web, mobile money, EBM, ordinateurs et support informatique, et actualités de Linse.",
     "title": "Dernières actualités",
     "featured": "Article à la une",
     "recent": "Les plus récents",
@@ -92,8 +92,8 @@
     }
   },
   "contactPage": {
-    "metaTitle": "Contact",
-    "metaDescription": "E-mail, téléphone, horaires et formulaire de projet pour joindre Linse à Kigali.",
+    "metaTitle": "Contact : parlez à notre équipe à Kigali",
+    "metaDescription": "Parlez-nous de votre projet, d'une commande de matériel ou d'un besoin de support. Appelez, écrivez sur WhatsApp ou par e-mail : nous vous répondons.",
     "title": "Contacter Linse",
     "office": "Bureau",
     "phone": "Téléphone / WhatsApp",

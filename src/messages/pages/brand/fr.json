@@ -1,0 +1,252 @@
+{
+  "brandPage": {
+    "meta": {
+      "title": "Charte de marque",
+      "description": "La marque Linse : logo, couleurs, typographie, matières verre et métal, mouvement et ton, avec le kit logo à télécharger."
+    },
+    "hero": {
+      "title": "Marque",
+      "lead": "Comment Linse apparaît, bouge et s’exprime : un seul système pour le site, nos produits et chaque publication.",
+      "cta": "Télécharger le kit logo"
+    },
+    "rail": {
+      "label": "Charte de marque",
+      "idea": "Idée",
+      "logo": "Logo",
+      "colour": "Couleur",
+      "materials": "Matières",
+      "type": "Typographie",
+      "graphic": "Langage graphique",
+      "motion": "Mouvement",
+      "voice": "Ton",
+      "applications": "Applications",
+      "downloads": "Téléchargements"
+    },
+    "idea": {
+      "title": "Toute l’informatique, sous un même toit",
+      "lead": "Une seule équipe pour les logiciels, les appareils sur lesquels ils tournent et le support qui fait fonctionner les deux. La marque porte cette idée de trois façons.",
+      "items": {
+        "night": {
+          "title": "De la nuit à la lumière",
+          "text": "Les pages s’ouvrent sur un vert nuit et s’éclaircissent peu à peu : la complexité devenue clarté."
+        },
+        "metal": {
+          "title": "Métal",
+          "text": "Le chrome et l’aluminium brossé représentent le matériel : des objets faits pour durer."
+        },
+        "glass": {
+          "title": "Verre",
+          "text": "Le verre dépoli ou clair, avec une lueur verte, représente le logiciel : transparent et précis."
+        }
+      },
+      "together": "Ensemble, ils forment un appareil : un corps en métal et un écran en verre. Chaque visuel principal utilise l’un ou les deux."
+    },
+    "logo": {
+      "title": "Logo",
+      "lead": "Le monogramme LS et le logotype Linse, composés en Archivo SemiBold. Utilisez les fichiers du kit logo ; ne les redessinez jamais.",
+      "tiles": {
+        "night": "Blanc cassé sur Nuit (par défaut)",
+        "light": "Encre sur fond clair",
+        "green": "Nuit sur vert",
+        "mark": "Le symbole seul : avatars, favicons, appareils"
+      },
+      "rules": {
+        "space": {
+          "title": "Zone de protection",
+          "text": "La largeur du fût du L, de chaque côté."
+        },
+        "size": {
+          "title": "Taille minimale",
+          "text": "Symbole : 16 px de haut ; logo horizontal : 72 px de large."
+        },
+        "legal": {
+          "title": "Raison sociale",
+          "text": "Linsetech Ltd, dans les documents, les contrats et les pieds de page."
+        }
+      },
+      "dontsTitle": "À éviter",
+      "donts": [
+        "L’étirer ou l’écraser",
+        "Le faire pivoter",
+        "Le réduire à un contour",
+        "Le recolorer hors de la palette",
+        "Le poser sur une photo chargée",
+        "Ajouter des ombres ou des effets autres que le verre et le métal validés"
+      ]
+    },
+    "colour": {
+      "title": "Couleur",
+      "lead": "La Nuit porte la marque, le vert donne le signal. Limitez le vert à environ un dixième de chaque mise en page.",
+      "copy": "Copier",
+      "copied": "Copié",
+      "swatches": {
+        "night": {
+          "name": "Nuit",
+          "role": "Arrière-plans"
+        },
+        "green": {
+          "name": "Vert Linse",
+          "role": "Accent, marqueurs, appels à l’action"
+        },
+        "offWhite": {
+          "name": "Blanc cassé",
+          "role": "Texte et filets sur Nuit"
+        },
+        "ink": {
+          "name": "Encre",
+          "role": "Texte sur fond clair"
+        },
+        "paper": {
+          "name": "Papier",
+          "role": "Sections claires, documents"
+        },
+        "mist": {
+          "name": "Brume",
+          "role": "Publications et cartes claires"
+        }
+      },
+      "scale": "Gamme de verts",
+      "gradientsTitle": "Dégradés",
+      "gradients": {
+        "nightfall": "Crépuscule : en-têtes de page",
+        "sweep": "Balayage : bannières et couvertures",
+        "glow": "Lueur : la nuit, avec la lumière qui monte"
+      },
+      "ratioTitle": "Proportions",
+      "ratio": {
+        "night": "Nuit",
+        "neutral": "Blanc cassé et gris",
+        "green": "Vert"
+      },
+      "a11y": "Le vert sur Nuit convient au texte (environ 8,7:1). Sur fond clair, composez le texte vert en Vert 600 (#15803D) ; le vert vif est réservé aux formes et aux mises en valeur."
+    },
+    "materials": {
+      "title": "Verre et métal",
+      "lead": "Nos deux matières, rendues dans un studio sombre, avec une lumière principale blanc cassé et un contre-jour vert venu du bas et de l’arrière. Un seul objet principal par visuel.",
+      "items": {
+        "chrome": {
+          "title": "Chrome",
+          "text": "Reflets polis et très contrastés d’un studio sombre, dans un environnement teinté de vert. Pour le matériel et le symbole LS."
+        },
+        "glass": {
+          "title": "Verre",
+          "text": "Dépoli ou clair, épais, aux bords biseautés qui accrochent un reflet blanc cassé, avec une légère lueur verte à l’intérieur. Pour le logiciel, les données et les cartes."
+        }
+      },
+      "combined": "Combinés : un cadre chromé qui tient une plaque de verre, comme un appareil tient son écran.",
+      "grain": "Un grain argentique de 4–6 % recouvre les visuels sombres, jamais le texte."
+    },
+    "type": {
+      "title": "Typographie",
+      "lead": "Archivo pour tout ce qu’on lit, Archivo Narrow en capitales pour tout ce qu’on parcourt. Les deux sont gratuites sur Google Fonts.",
+      "sample": "Toute l’informatique, sous un même toit.",
+      "narrowSample": "01 / Réalisations · Matériel · Kigali",
+      "weights": "Regular 400 · Medium 500 · SemiBold 600",
+      "scaleTitle": "Échelle",
+      "scale": {
+        "display": "Grand titre",
+        "h2": "Titre de section",
+        "h3": "Titre de carte",
+        "body": "Corps de texte",
+        "label": "Libellé"
+      },
+      "note": "Les titres sont serrés (interlignage 1,0–1,1, approche −2 %). Le kinyarwanda est 15–20 % plus long que l’anglais : prévoyez de la place."
+    },
+    "graphic": {
+      "title": "Langage graphique",
+      "lead": "Des angles droits partout, de fines lignes tiretées, un petit carré vert comme repère, et un module carré unique qui construit grilles, cartes et animations.",
+      "units": {
+        "solid": "Plein",
+        "layered": "Superposé",
+        "outline": "Contour tireté",
+        "grid": "Grille",
+        "glass": "Verre",
+        "chrome": "Chrome"
+      },
+      "elements": {
+        "dashed": {
+          "title": "Lignes tiretées",
+          "text": "1 px, blanc cassé à 15 % sur Nuit, noir à 15 % sur fond clair."
+        },
+        "marker": {
+          "title": "Marqueur",
+          "text": "Un carré vert de 6 px signale les titres et les listes."
+        },
+        "index": {
+          "title": "Numéros d’index",
+          "text": "01, 02… en Archivo Narrow, pour les étapes, les diapositives et les sections."
+        },
+        "icons": {
+          "title": "Icônes",
+          "text": "Icônes au trait, épaisseur 1,5 px sur une grille de 24 px, extrémités carrées."
+        }
+      }
+    },
+    "motion": {
+      "title": "Mouvement",
+      "lead": "Les éléments arrivent vite et se posent lentement. Le texte apparaît ligne par ligne ou lettre par lettre, la 3D suit le défilement, et les boucles pour les réseaux sociaux durent 6–10 secondes, sans raccord visible.",
+      "items": {
+        "expo": "Expo out : entrées, 0,6–1,2 s",
+        "inOutQuart": "In-out quart : transitions de page",
+        "outQuad": "Out quad : petits retours d’interface"
+      },
+      "replay": "Rejouer"
+    },
+    "voice": {
+      "title": "Ton",
+      "lead": "Nous écrivons comme un bon ingénieur explique : simplement, précisément, sans exagération.",
+      "items": {
+        "plain": {
+          "title": "Simple",
+          "text": "Des phrases courtes et des mots courants. Expliquez le terme ou supprimez-le."
+        },
+        "specific": {
+          "title": "Précis",
+          "text": "De vrais chiffres, de vrais lieux, de vraies étapes. Aucun chiffre que nous ne pouvons pas garantir."
+        },
+        "confident": {
+          "title": "Assuré",
+          "text": "Dire ce que nous faisons et comment. Pas de « révolutionnaire », pas de « meilleur d’Afrique »."
+        },
+        "local": {
+          "title": "Local",
+          "text": "L’anglais et le kinyarwanda, chacun écrit naturellement, jamais traduit mot à mot."
+        }
+      },
+      "doTitle": "À écrire",
+      "dontTitle": "À éviter",
+      "pairs": [
+        {
+          "do": "Nous configurons chaque ordinateur portable avant qu’il quitte notre atelier.",
+          "dont": "Nous fournissons des solutions informatiques de pointe, les meilleures de leur catégorie."
+        },
+        {
+          "do": "Un technicien prend en charge les incidents critiques dans l’heure.",
+          "dont": "Un support ultra-rapide et de classe mondiale, 24/7/365 !"
+        }
+      ]
+    },
+    "applications": {
+      "title": "Applications",
+      "lead": "Le même cadre sur chaque publication : logo en haut à gauche, nom de la série en haut à droite, pied de page tireté avec l’adresse, un seul objet principal. Les publications sur fond Nuit et sur fond clair alternent, pour que la grille du profil forme un damier.",
+      "social": "Réseaux sociaux",
+      "sizes": "Fil 1080 × 1350 · Stories et reels 1080 × 1920 · X 1200 × 675 · Lien LinkedIn 1200 × 627",
+      "card": "Carte de visite",
+      "signature": "Signature e-mail",
+      "name": "Votre nom",
+      "role": "Votre fonction",
+      "signatureLine": "Logiciels, matériel et informatique sous un même toit",
+      "device": "Marquage des appareils : le symbole LS sur le design du terminal de paiement Linse"
+    },
+    "downloads": {
+      "title": "Téléchargements",
+      "items": {
+        "logos": "Kit logo : symbole et déclinaisons, SVG et PNG, quatre couleurs",
+        "guidelines": "Charte de marque (PDF)"
+      },
+      "download": "Télécharger",
+      "soon": "Bientôt disponible",
+      "contact": "Questions sur l’utilisation de la marque ou demandes presse : press@linsetech.com"
+    }
+  }
+}

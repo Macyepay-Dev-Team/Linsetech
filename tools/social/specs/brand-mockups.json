@@ -1,0 +1,52 @@
+[
+  {
+    "name": "mock-night",
+    "kind": "cover",
+    "tone": "night",
+    "label": "Linse",
+    "counter": "01 / 06",
+    "lang": "EN",
+    "headline": "Everything IT, under one roof.",
+    "keyword": "under one roof.",
+    "body": "Software we build, products we own, hardware we supply and IT we run.",
+    "hero": "../../../public/brand/brand_hero.webp",
+    "heroBox": "right:-120px;bottom:110px;width:760px",
+    "cta": "Swipe"
+  },
+  {
+    "name": "mock-light",
+    "kind": "slide",
+    "tone": "light",
+    "label": "Plain words",
+    "counter": "02 / 05",
+    "lang": "EN",
+    "headline": "Managed IT, in plain words.",
+    "keyword": "plain words.",
+    "cards": [
+      {
+        "icon": "01",
+        "title": "A help desk",
+        "text": "Your team calls, writes or sends a WhatsApp. We answer."
+      },
+      {
+        "icon": "02",
+        "title": "Watched systems",
+        "text": "Networks and servers monitored before things break."
+      },
+      {
+        "icon": "03",
+        "title": "Tested backups",
+        "text": "Backups we restore on purpose, so they work on the day."
+      },
+      {
+        "icon": "04",
+        "title": "One contract",
+        "text": "Agreed response times and a fixed monthly price."
+      }
+    ],
+    "cta": "linsetech.com/services",
+    "hero": "../../../public/brand/brand_glass.webp",
+    "heroBox": "right:70px;bottom:150px;width:330px",
+    "body": ""
+  }
+]

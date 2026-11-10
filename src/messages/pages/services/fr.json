@@ -1,8 +1,8 @@
 {
   "servicesPage": {
     "meta": {
-      "title": "Services",
-      "description": "Design, sites et applications, systèmes et intégration, nos logiciels, matériel et distribution, services IT : six services, une seule équipe."
+      "title": "Services informatiques et logiciels au Rwanda",
+      "description": "Six services, une équipe à Kigali : design, sites web et applications, systèmes et mobile money, MacyePay, matériel informatique et infogérance."
     },
     "hero": {
       "title": "Tout l’IT, sous un même toit.",
@@ -101,7 +101,11 @@
             "q": "Pouvez-vous moderniser une marque existante ?",
             "a": "Oui, d’un simple rafraîchissement à une identité complète : logo, typographie, couleurs et modèles."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Agence UI/UX et design produit à Kigali",
+          "description": "Design produit, UX/UI et identité de marque pour produits numériques au Rwanda : recherche, prototypes et design systems pensés pour le mobile."
+        }
       },
       "web": {
         "title": "Sites & applications",
@@ -152,7 +156,11 @@
             "q": "Pouvons-nous modifier les contenus nous-mêmes ?",
             "a": "Oui. Nous installons un CMS (Sanity par défaut) pour que votre équipe modifie pages, actualités et produits sans développeur."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Création de sites web et d'applications au Rwanda",
+          "description": "Sites web, applications web et mobiles (Android, iOS) conçus à Kigali : rapides sur mobile, paiement MoMo, en anglais, français et kinyarwanda."
+        }
       },
       "systems": {
         "title": "Systèmes & intégration",
@@ -203,7 +211,11 @@
             "q": "Pouvez-vous reprendre un système développé par un autre ?",
             "a": "Oui. Nous commençons par un audit, stabilisons ce qui est en production, puis planifions les améliorations."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Systèmes, caisses et intégration mobile money",
+          "description": "Des systèmes qui communiquent : caisses, ERP et stocks, paiements MTN MoMo et Airtel Money, et connexion de vos logiciels existants."
+        }
       },
       "software": {
         "title": "Nos logiciels",
@@ -254,7 +266,11 @@
             "q": "Développeriez-vous un produit avec nous ?",
             "a": "Oui. Nous co-développons et co-détenons des produits avec des partenaires qui apportent le marché ; parlons-en."
           }
-        ]
+        ],
+        "meta": {
+          "title": "MacyePay : logiciel de paiement échelonné",
+          "description": "MacyePay permet aux commerçants et aux prêteurs de vendre en paiement échelonné, avec contrats notariés, relances automatiques et encaissement MoMo."
+        }
       },
       "hardware": {
         "title": "Matériel & distribution",
@@ -305,7 +321,11 @@
             "q": "Pouvez-vous chiffrer l’équipement complet d’un bureau ?",
             "a": "Oui : postes, réseau, sécurité et installation dans un seul devis. Demandez le catalogue."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Ordinateurs, terminaux POS et matériel IT au Rwanda",
+          "description": "Ordinateurs portables, serveurs, réseau, terminaux de paiement, imprimantes et vidéosurveillance pour entreprises, livrés partout au Rwanda."
+        }
       },
       "it": {
         "title": "Services IT",
@@ -356,7 +376,11 @@
             "q": "Assurez-vous le support de matériel que vous n’avez pas vendu ?",
             "a": "Oui, après un rapide audit de votre parc."
           }
-        ]
+        ],
+        "meta": {
+          "title": "Infogérance et support informatique à Kigali",
+          "description": "Infogérance pour les entreprises au Rwanda : contrats de support avec SLA, réseaux, sauvegardes testées et techniciens sur site à Kigali."
+        }
       }
     },
     "models": {
@@ -477,10 +501,6 @@
       "macyepay": {
         "tag": "Fintech · Produit édité",
         "blurb": "Paiement échelonné pour les entreprises rwandaises, appuyé sur des contrats notariés, un recouvrement automatisé et l’intégration au bureau de crédit."
-      },
-      "clinic-hmis": {
-        "tag": "Systèmes · Santé",
-        "blurb": "Dossiers patients, pharmacie, facturation et demandes d’assurance dans un seul système de gestion hospitalière."
       },
       "retail-rollout": {
         "tag": "Matériel · Distribution",
