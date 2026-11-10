@@ -8,9 +8,10 @@
  * Hover is Puture's: a raycast every frame from the shared pointer (so a still pointer catches a panel rising under it),
  * feeding the grid spot and the DOM exhibit cursor; a click on a risen panel leaves through the pixel wave.
  */
-import { useEffect, useMemo, useRef, useState, type RefObject } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import * as THREE from "three";
-import { Canvas, useFrame, type ThreeEvent } from "@react-three/fiber";
+import { Canvas, useFrame, useThree, type ThreeEvent } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei";
 import { useRouter } from "@/i18n/navigation";
 import type { CardShape } from "@/content/work";
 import type { WorkPacing } from "@/components/sections/WorkPacing";
@@ -22,7 +23,7 @@ import { useContextRecovery } from "./useContextRecovery";
 import CanvasBoundary from "./CanvasBoundary";
 import { CANVAS_CAMERA, CANVAS_DPR, Space, SpaceBackdrop, SpaceTimeline, canvasPointer, forgetPointer, frame, gridPoint, handoffFrame, useSpace, type SpaceParams, type TileChipState } from "./WorkSpace";
 
-export type FloorCard = { slug: string; title: string; cover: string | null; shape: CardShape; accent: string };
+export type FloorCard = { slug: string; title: string; cover: string | null; shape: CardShape; accent: string; /** a 3D model (GLB) standing in for the panel */ model?: string };
 
 const HALF = 1.5;
 /** Panel size: landscape 6 × 3.375, portrait 3 × 5.33 (world units). */
@@ -238,6 +239,116 @@ function Panel({ card, index, dark, faces }: { card: FloorCard; index: number; d
   );
 }
 
+/* ------------------------------------------------------------------------------------------------- 3D models */
+
+/** The model's size and resting turn on the floor (the Linse POS terminal is ~3.6 × 3.3 units in its file). */
+const MODEL_SCALE = 1.0;
+const MODEL_YAW = -0.55;
+
+/**
+ * The GLB, cloned for this floor. Its shaders are compiled at idle time as soon as it loads: compiled on first sight
+ * instead (mid-scroll, as the camera arrives), WebKit froze for up to a second.
+ */
+function Model({ url }: { url: string }) {
+  const { scene } = useGLTF(url);
+  const gl = useThree((s) => s.gl);
+  const camera = useThree((s) => s.camera);
+  const root = useThree((s) => s.scene);
+  const obj = useMemo(() => scene.clone(true), [scene]);
+  useEffect(() => {
+    let live = true;
+    const warm = () => {
+      if (live) gl.compileAsync(obj, camera, root).catch(() => {});
+    };
+    if ("requestIdleCallback" in window) {
+      const id = window.requestIdleCallback(warm, { timeout: 2000 });
+      return () => {
+        live = false;
+        window.cancelIdleCallback(id);
+      };
+    }
+    const id = setTimeout(warm, 200);
+    return () => {
+      live = false;
+      clearTimeout(id);
+    };
+  }, [gl, camera, root, obj]);
+  return <primitive object={obj} />;
+}
+
+/**
+ * A project shown as a 3D object instead of a framed panel (the retail case's POS terminal): it stands on the panel's
+ * foot, grows up out of the grid as the camera arrives (the panels' `raise`; no opacity fade, which made the materials
+ * switch shader variants mid-scroll), turns from the side into a three-quarter view, then sways slowly while it is held.
+ * An invisible box takes the hover raycast and the click, like a panel's face.
+ */
+function ModelPanel({ card, index, dark, faces }: { card: FloorCard; index: number; dark: boolean; faces: RefObject<(THREE.Mesh | null)[]> }) {
+  const st = useSpace();
+  const router = useRouter();
+  const group = useRef<THREE.Group>(null);
+  const body = useRef<THREE.Group>(null);
+  const shadow = useRef<THREE.Mesh>(null);
+  const shadowMat = useRef<THREE.MeshBasicMaterial>(null);
+  const [w, h] = cardSize(card.shape);
+  const [x, z] = cardFoot(index);
+
+  useEffect(() => {
+    if (card.model) useGLTF.preload(card.model);
+  }, [card.model]);
+
+  useFrame(({ clock }) => {
+    const g = group.current;
+    const b = body.current;
+    const s = shadow.current;
+    if (!g || !b || !s || !shadowMat.current) return;
+    const u = raise(st.p, index);
+    g.visible = s.visible = u > 0.002;
+    if (!g.visible) return;
+    gridPoint(st, x, z, 0, g.position);
+    g.quaternion.copy(st.grid.quaternion);
+    const k = smoothstep(u, 0.02, 0.9);
+    b.scale.setScalar(MODEL_SCALE * Math.max(0.001, 1 - (1 - k) ** 3));
+    b.rotation.y = MODEL_YAW - (1 - k) * 1.1 + Math.sin(clock.elapsedTime * 0.45) * 0.14 * k;
+    gridPoint(st, x, z, 0.01, s.position);
+    s.quaternion.copy(st.grid.quaternion).multiply(_flat);
+    shadowMat.current.opacity = (dark ? 0.32 : 0.18) * u;
+    g.updateMatrixWorld();
+  });
+
+  const open = (e: ThreeEvent<MouseEvent>) => {
+    if (raise(st.p, index) <= 0.9) return;
+    document.documentElement.style.removeProperty("cursor");
+    waveTo(`/work/${card.slug}`, { x: e.nativeEvent.clientX, y: e.nativeEvent.clientY }, (href) => router.push(href as never, { scroll: false }));
+  };
+
+  return (
+    <>
+      <group ref={group}>
+        <group ref={body}>
+          <Suspense fallback={null}>
+            <Model url={card.model!} />
+          </Suspense>
+        </group>
+        <mesh
+          ref={(el) => void (faces.current[index] = el)}
+          position={[0, h * 0.4, 0]}
+          onClick={(e) => {
+            e.stopPropagation();
+            open(e);
+          }}
+        >
+          <boxGeometry args={[w * 1.4, h * 0.8, 3]} />
+          <meshBasicMaterial transparent opacity={0} depthWrite={false} colorWrite={false} />
+        </mesh>
+      </group>
+      <mesh ref={shadow} renderOrder={-1}>
+        <planeGeometry args={[w * 1.9, 3.2]} />
+        <meshBasicMaterial ref={shadowMat} color="#04150f" alphaMap={shadowTexture()} transparent depthWrite={false} />
+      </mesh>
+    </>
+  );
+}
+
 const _ray = new THREE.Raycaster();
 const _ndc = new THREE.Vector2();
 
@@ -285,9 +396,7 @@ function Panels({ cards, dark, hover }: { cards: FloorCard[]; dark: boolean; hov
   });
   return (
     <>
-      {cards.map((c, i) => (
-        <Panel key={c.slug} card={c} index={i} dark={dark} faces={faces} />
-      ))}
+      {cards.map((c, i) => (c.model ? <ModelPanel key={c.slug} card={c} index={i} dark={dark} faces={faces} /> : <Panel key={c.slug} card={c} index={i} dark={dark} faces={faces} />))}
     </>
   );
 }

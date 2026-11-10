@@ -250,7 +250,30 @@
             "title": "Réseau supervisé",
             "text": "Routeurs et points d’accès des agences sont suivis depuis un seul tableau de bord."
           }
-        ]
+        ],
+        "device": {
+          "label": "Le terminal",
+          "title": "Une caisse, pièce par pièce",
+          "text": "Un terminal dans le langage visuel de Linse : un écran fin sur un seul pied en chrome plié, un écran plus bas pour le client, et une base qui accueille l’imprimante et l’anneau de paiement sans contact.",
+          "beats": [
+            {
+              "title": "Assemblé et configuré",
+              "text": "Écran, pied, imprimante et base s’assemblent, paramétrés avant d’arriver en magasin."
+            },
+            {
+              "title": "Un écran pour la caisse",
+              "text": "Articles, totaux et TVA en un coup d’œil ; espèces, carte ou mobile money."
+            },
+            {
+              "title": "Un écran pour le client",
+              "text": "L’écran du bas affiche le total et un code pour payer par MoMo."
+            },
+            {
+              "title": "Un reçu pour chaque vente",
+              "text": "La vente se termine par un reçu imprimé."
+            }
+          ]
+        }
       }
     }
   }

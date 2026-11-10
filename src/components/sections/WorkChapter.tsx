@@ -113,7 +113,7 @@ export default function WorkChapter({ projects, chapter = "work", dark = false, 
     { scope: root, dependencies: [pacing, toDark] },
   );
 
-  const cards = useMemo(() => projects.map((p) => ({ slug: p.slug, title: p.title, cover: p.cover, shape: p.shape, accent: p.accent })), [projects]);
+  const cards = useMemo(() => projects.map((p) => ({ slug: p.slug, title: p.title, cover: p.cover, shape: p.shape, accent: p.accent, model: p.model })), [projects]);
 
   return (
     <section

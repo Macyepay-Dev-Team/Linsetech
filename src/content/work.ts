@@ -22,6 +22,10 @@ export type Project = {
   meta: { scope: string; period: string; role: string; stack: string[] };
   delivered: string[];
   screens: Screen[];
+  /** a 3D model (GLB in public/models) shown on the Work floor instead of the cover panel */
+  model?: string;
+  /** a device in 3D, scrubbed by scroll after the overview (clip key in src/content/clips.ts) */
+  device?: { clip: "posTill"; label: string; title: string; text: string; beats: { title: string; text: string }[]; marks?: number[] };
   /** a second, mobile part shown as its own section (screens are wide composites of several phone screens) */
   phone?: { title: string; text: string; screens: Screen[] };
   journey: { title: string; text: string }[];
@@ -107,6 +111,7 @@ export const projects: Project[] = [
       "A sample case study that shows how a hardware project is presented here: sourcing, delivery, installation and support of point-of-sale terminals and networking across a branch network. It stands in for a real project until one is published from the Studio.",
     shape: "kiosk",
     cover: "/work/retail-rollout/cover.jpg",
+    model: "/models/linse-pos.glb",
     accent: "#22c55e",
     result: { value: "38", label: "Branches equipped (sample figure)" },
     stats: [
@@ -125,6 +130,21 @@ export const projects: Project[] = [
       { src: null, caption: "Branch network" },
       { src: null, caption: "On-site support" },
     ],
+    device: {
+      clip: "posTill",
+      // where each beat starts in the clip: assembly, the till screen lights up (frame ~108), the customer side (~165),
+      // the receipt (~255 of 300)
+      marks: [0, 0.36, 0.55, 0.85],
+      label: "The terminal",
+      title: "A checkout, piece by piece",
+      text: "A terminal in Linse's design language: a thin screen on one folded chrome stand, a lower display for the customer, and a base that holds the printer and the tap-to-pay ring.",
+      beats: [
+        { title: "Assembled and configured", text: "Screen, stand, printer and base come together, set up before they reach the branch." },
+        { title: "One screen for the till", text: "Items, totals and VAT at a glance; cash, card or mobile money." },
+        { title: "A screen for the customer", text: "The lower display shows the total and a code to pay with MoMo." },
+        { title: "A receipt for every sale", text: "The sale closes with a printed receipt." },
+      ],
+    },
     journey: [
       { title: "Audit", text: "Each branch is surveyed: tills, power, network and staff." },
       { title: "Deliver", text: "Devices arrive configured, are installed and tested on site." },

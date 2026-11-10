@@ -19,9 +19,11 @@ function Cover({ project, section, comingSoon }: { project?: Project; section?: 
   const p = project!;
   const portrait = p.shape !== "landscape";
   return (
-    <span className="relative my-1 grid aspect-[16/10] w-full place-items-center bg-white/[0.03] p-[clamp(14px,3vw,44px)] shadow-[inset_0_0_0_1px_rgba(255,255,255,.1)] transition-[background-color,box-shadow] duration-[400ms] group-hover:bg-[#22c55e1a] group-hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,.18)]">
-      <span className={cn("block transition-[scale] duration-[600ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.03]", portrait ? "h-full" : "w-full")}>
-        <Device shape={portrait ? "portrait" : "screen"} fit={portrait ? "height" : "width"}>
+    <span className="relative my-1 grid aspect-[16/10] w-full min-w-0 place-items-center overflow-hidden bg-white/[0.03] p-[clamp(14px,3vw,44px)] shadow-[inset_0_0_0_1px_rgba(255,255,255,.1)] transition-[background-color,box-shadow] duration-[400ms] group-hover:bg-[#22c55e1a] group-hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,.18)]">
+      {/* sized by height in both shapes: a 16:10 screen sized by width is taller than the padded 16:10 plate, which then
+          grew wider than its column and pushed the cover into the next card */}
+      <span className="block h-full min-h-0 transition-[scale] duration-[600ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.03]">
+        <Device shape={portrait ? "portrait" : "screen"} fit="height">
           <ScreenImage screen={{ src: p.cover, caption: p.title }} shape={portrait ? "portrait" : "screen"} index={0} sizes="(min-width:900px) 40vw, 50vw" label={comingSoon} />
         </Device>
       </span>

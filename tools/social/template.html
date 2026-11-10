@@ -37,10 +37,16 @@
   .cta i { font-style:normal; font-size:22px; }
   .hero { position:absolute; pointer-events:none; }
   .cards { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  /* clear glass (no blur): a near-transparent body, a bright edge on the lit sides, a darker one opposite, a soft drop */
   .card { position:relative; padding:28px; min-height:220px; display:flex; flex-direction:column; gap:14px;
-    background:linear-gradient(160deg, rgba(255,255,255,.55), rgba(255,255,255,.18)); border:1.5px solid rgba(11,20,17,.12);
-    box-shadow: inset 0 1.5px 0 rgba(255,255,255,.9), 0 30px 60px -30px rgba(6,40,31,.35); backdrop-filter: blur(14px); }
-  .night .card { background:linear-gradient(160deg, rgba(243,243,243,.10), rgba(243,243,243,.03)); border-color:rgba(243,243,243,.16); box-shadow: inset 0 1.5px 0 rgba(243,243,243,.18); }
+    background:linear-gradient(150deg, rgba(255,255,255,.34) 0%, rgba(255,255,255,.08) 45%, rgba(255,255,255,.18) 100%);
+    border:1.5px solid rgba(11,20,17,.10);
+    box-shadow: inset 2px 2px 0 rgba(255,255,255,.95), inset -1.5px -1.5px 0 rgba(11,20,17,.07), 0 34px 60px -34px rgba(6,40,31,.32); }
+  .card::before { content:""; position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(115deg, rgba(255,255,255,0) 30%, rgba(255,255,255,.45) 38%, rgba(255,255,255,0) 46%); opacity:.55; }
+  .night .card { background:linear-gradient(150deg, rgba(243,243,243,.07), rgba(243,243,243,.015) 50%, rgba(34,197,94,.05));
+    border-color:rgba(243,243,243,.16); box-shadow: inset 2px 2px 0 rgba(255,255,255,.22), inset -1.5px -1.5px 0 rgba(0,0,0,.35); }
+  .night .card::before { opacity:.18; }
   .card .ic { width:44px; height:44px; border:2px solid var(--green); display:grid; place-items:center; font-family:"Archivo Narrow"; font-size:18px; color:var(--green600); }
   .night .card .ic { color: var(--green); }
   .card b { font-weight:600; font-size:30px; letter-spacing:-.01em; }

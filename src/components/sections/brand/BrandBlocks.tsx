@@ -226,7 +226,7 @@ function Unit({ kind }: { kind: (typeof squareUnits)[number] }) {
     );
   return (
     <span className={cn(box, "block bg-[#020a07]")}>
-      <Image src={kind === "glass" ? "/brand/brand_glass.webp" : "/brand/brand_chrome.webp"} alt="" fill sizes="20vw" className="object-contain p-[8%]" />
+      <Image src={kind === "glass" ? "/brand/brand_glass_v3.webp" : "/brand/brand_chrome.webp"} alt="" fill sizes="20vw" className="object-contain p-[8%]" />
     </span>
   );
 }
@@ -307,7 +307,7 @@ export function SocialMocks({ title, sizes, alt }: { title: string; sizes: strin
       <ul className="grid grid-cols-2 gap-4 min-[800px]:gap-[28px]">
         {["night", "light"].map((k) => (
           <li key={k} className="relative aspect-[4/5] overflow-hidden border border-[var(--c-stroke)] shadow-[0_40px_80px_-40px_rgba(6,40,31,.45)]">
-            <Image src={`/brand/app_social_${k}.webp`} alt={alt} fill sizes="(min-width: 800px) 34vw, 46vw" className="object-cover" />
+            <Image src={`/brand/app_social_${k}_v3.webp`} alt={alt} fill sizes="(min-width: 800px) 34vw, 46vw" className="object-cover" />
           </li>
         ))}
       </ul>
@@ -371,7 +371,7 @@ export function DeviceShot({ title }: { title: string }) {
     <div className="mt-[56px]">
       <p className="eyebrow mb-4 text-[var(--c-sub)]">{title}</p>
       <div className="relative aspect-[8/7] w-full overflow-hidden" style={{ background: CARD_BG }}>
-        <Image src="/brand/app_pos.webp" alt={title} fill sizes="(min-width: 800px) 70vw, 100vw" className="object-contain p-[4%]" />
+        <Image src="/brand/app_pos_v2.webp" alt={title} fill sizes="(min-width: 800px) 70vw, 100vw" className="object-contain p-[4%]" />
       </div>
     </div>
   );

@@ -85,8 +85,9 @@ def mat_paper(name="paper"):
 
 chrome = mat_chrome("chrome", color=(0.9, 0.93, 0.91), rough=float(os.environ.get("CHROME_ROUGH", "0.08")), coat=0.8)
 body = mat_anodised()
-smoked = mat_frosted("smoked", tint=os.environ.get("SMOKED", "#22382F"), rough=0.3, thickness=0.1, milk=0.02)
-topglass = mat_frosted("topglass", tint="#2C4A3D", rough=0.38, thickness=0.06, milk=0.03)
+# clear glass, not frosted (owner, 10 Nov 2026): smoked clear glass on the backs and lids, clear glass on the base top
+smoked = mat_clear("smoked", tint=os.environ.get("SMOKED", "#1E3329"), alpha_min=float(os.environ.get("SMOKED_A0", "0.42")), alpha_max=0.96, rim_strength=0.35)
+topglass = mat_clear("topglass", tint="#DDF7EA", alpha_min=0.06, alpha_max=0.8, rim_strength=0.3)
 slot = mat_anodised("slot", color=(0.005, 0.007, 0.006), rough=0.6)
 green = mat_emit("green", "#22C55E", float(os.environ.get("RING", "6.0")))
 markglow = mat_emit("markglow", "#4ADE80", float(os.environ.get("MARK_GLOW", "1.4")), alpha=0.9)
@@ -215,8 +216,137 @@ mesh_object(scene, "CuArm", bm_box(0.5, 0.42, 0.12, bevel=0.03), chrome, parent=
 # camera: three-quarter front, slightly above, the whole terminal in frame
 yaw = math.radians(float(os.environ.get("YAW", "-42")))
 dist = float(os.environ.get("D", "8.4"))
-target = (0, 0.55, 1.15)
-add_camera(scene, (target[0] + dist * math.sin(yaw), target[1] - dist * math.cos(yaw), float(os.environ.get("CAM_Z", "3.9"))), target, lens=50)
+target = Vector((0, 0.55, 1.15))
+cam = add_camera(scene, (target[0] + dist * math.sin(yaw), target[1] - dist * math.cos(yaw), float(os.environ.get("CAM_Z", "3.9"))), tuple(target), lens=50)
 
-render_frames(scene, "pos", [1], OUT_DIR, skip_existing=False)
-log("done pos")
+if os.environ.get("EXPORT"):
+    # EXPORT=<path.glb>: the terminal as a glTF binary for the Work floor (three.js). The glass and glow materials are
+    # node tricks glTF cannot carry, so they become plain PBR: glossy dark glass, opaque emissive green.
+    def principled(name, color, metallic=0.0, rough=0.06, coat=0.8, emit=None, strength=1.0):
+        m, nt, pb, out = _new_mat(name)
+        setin(pb, "Base Color", hex2lin(color))
+        setin(pb, "Metallic", metallic)
+        setin(pb, "Roughness", rough)
+        setin(pb, "Coat Weight", coat)
+        if emit:
+            setin(pb, "Emission Color", hex2lin(emit))
+            setin(pb, "Emission Strength", strength)
+        return m
+
+    swap = {
+        "smoked": principled("smokedGlass", "#0B1411", rough=0.05, coat=1.0),
+        "topglass": principled("topGlass", "#16241E", rough=0.07, coat=1.0),
+        "green": principled("greenLight", "#000000", rough=1.0, coat=0.0, emit="#22C55E", strength=4.0),
+        "markglow": principled("markGlow", "#000000", rough=1.0, coat=0.0, emit="#4ADE80", strength=1.6),
+    }
+    for o in scene.objects:
+        if o.type != "MESH":
+            continue
+        for slot in o.material_slots:
+            if slot.material and slot.material.name in swap:
+                slot.material = swap[slot.material.name]
+    for m in bpy.data.materials:
+        m.surface_render_method = "DITHERED"
+    path = os.environ["EXPORT"]
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    opts = dict(filepath=path, export_format="GLB", use_selection=False, export_cameras=False, export_lights=False, export_apply=True, export_yup=True, export_materials="EXPORT")
+    try:
+        bpy.ops.export_scene.gltf(**opts, export_image_format="WEBP")
+    except TypeError:
+        bpy.ops.export_scene.gltf(**opts)
+    log("exported", path, os.path.getsize(path))
+elif os.environ.get("ANIM") != "1":
+    render_frames(scene, "pos", [1], OUT_DIR, skip_existing=False)
+    log("done pos")
+else:
+    # ANIM=1: "pos_till", 10 s at 30 fps for the case page (scroll-scrubbed) — the parts float in, assemble, the
+    # operator screen lights up, the camera orbits once around the terminal (the customer display lights up on the way),
+    # the tap ring pulses and a receipt prints. Frames -> out/pos_till/frames/pos_till_####.png
+    NAME, N = "pos_till", 300
+    scene.render.resolution_x, scene.render.resolution_y = int(os.environ.get("W", "1440")), int(os.environ.get("H", "1260"))
+    scene.frame_end = N
+    by = {o.name: o for o in scene.objects}
+
+    def smooth(t):
+        t = max(0.0, min(1.0, t))
+        return t * t * (3 - 2 * t)
+
+    def ease_out(t):
+        t = max(0.0, min(1.0, t))
+        return 1 - (1 - t) ** 3
+
+    # parts: (objects, start offset, extra rotation at the start, assembly from..to frame)
+    PARTS = [
+        (["Base", "BaseTop", "TapRing", "Status"], (0, 0, -2.4), (0, 0, 0), 18, 62),
+        (["Printer", "PrinterLid", "Slot"], (-2.0, -0.8, 1.9), (0, 0, 0.5), 30, 74),
+        (["Stand"], (0, 2.4, 1.8), (0.4, 0, 0), 42, 86),
+        (["OpScreen"], (0, -0.6, 3.2), (0.7, 0, 0), 54, 100),
+        (["CuScreen", "CuArm"], (0, 3.0, 0.7), (0, 0, 0), 62, 104),
+    ]
+    for names, off, rot, f0, f1 in PARTS:
+        for n in names:
+            o = by[n]
+            loc1, rot1 = o.location.copy(), o.rotation_euler.copy()
+
+            def fn(f, loc1=loc1, rot1=rot1, off=off, rot=rot, f0=f0, f1=f1):
+                drift = 1.12 - 0.12 * smooth(f / f0)  # a slow drift towards the start pose before assembling
+                k = 1 - ease_out((f - f0) / (f1 - f0)) if f >= f0 else drift
+                return dict(loc=loc1 + Vector(off) * k, rot=(rot1.x + rot[0] * k, rot1.y + rot[1] * k, rot1.z + rot[2] * k))
+
+            bake(o, range(1, N + 1), fn)
+
+    # screens power on: operator after assembly, customer during the orbit
+    for f, v in ((1, 0.0), (100, 0.0), (128, 1.5)):
+        key_input(op_screen, "Emission Strength", f, v)
+    for f, v in ((1, 0.0), (162, 0.0), (186, 1.5)):
+        key_input(cu_screen, "Emission Strength", f, v)
+    for f, v in ((1, 0.0), (96, 0.0), (120, float(os.environ.get("MARK_GLOW", "1.4")))):
+        key_input(markglow, "Emission Strength", f, v)
+    for f, v in ((1, 0.0), (60, 0.0), (80, 6.0), (262, 6.0), (268, 22.0), (280, 6.0)):
+        key_input(green, "Emission Strength", f, v)
+    ring = by["TapRing"]
+
+    def ring_fn(f):
+        p = math.sin(math.pi * max(0.0, min(1.0, (f - 262) / 18)))
+        return dict(scale=(1 + 0.18 * p,) * 3)
+
+    bake(ring, range(1, N + 1), ring_fn)
+
+    # the receipt slides out of the slot at the end (hidden inside the printer and base until then)
+    rec = by["Receipt"]
+    rloc = rec.location.copy()
+    key_hide(rec, 1, True)
+    key_hide(rec, 258, False)
+    bake(rec, range(1, N + 1), lambda f: dict(loc=rloc + Vector((0, 0.78 * (1 - ease_out((f - 258) / 36)), 0))))
+
+    # camera: push in during assembly, hold for the screen, one full orbit (back to the customer side and round)
+    def yaw_at(f):
+        a, b, c = -62.0, -42.0, 150.0
+        if f <= 100:
+            return a + (b - a) * smooth(f / 100)
+        if f <= 130:
+            return b
+        if f <= 205:
+            return b + (c - b) * smooth((f - 130) / 75)
+        if f <= 215:
+            return c
+        return c + (318.0 - c) * smooth((f - 215) / 72)
+
+    def cam_fn(f):
+        y = math.radians(yaw_at(f))
+        d = 9.6 - 1.2 * smooth(f / 100) + 0.5 * math.sin(math.pi * smooth((f - 130) / 160)) * (f > 130)
+        z = 4.5 - 0.6 * smooth(f / 100)
+        loc = Vector((target.x + d * math.sin(y), target.y - d * math.cos(y), z))
+        return dict(loc=loc, rot=(target - loc).to_track_quat("-Z", "Y").to_euler())
+
+    bake(cam, range(1, N + 1), cam_fn)
+
+    out_dir = os.path.join(OUT, NAME)
+    if ARGS["preview"]:
+        frames = preview_frames(N)
+        paths = render_frames(scene, NAME + "_pv", frames, os.path.join(out_dir, "preview"), skip_existing=False)
+        log("preview sheet:", contact_sheet(paths, os.path.join(OUT, f"{NAME}_preview_sheet.png"), cols=4, checker=("#020a07", "#0b3d2e")))
+    else:
+        lo, hi = ARGS["frames"] or (1, N)
+        render_frames(scene, NAME, range(lo, hi + 1), os.path.join(out_dir, "frames"))
+        log("done", NAME)

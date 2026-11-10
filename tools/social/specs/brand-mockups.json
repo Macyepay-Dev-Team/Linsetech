@@ -9,7 +9,7 @@
     "headline": "Everything IT, under one roof.",
     "keyword": "under one roof.",
     "body": "Software we build, products we own, hardware we supply and IT we run.",
-    "hero": "../../../public/brand/brand_hero.webp",
+    "hero": "../../../public/brand/brand_hero_v3.webp",
     "heroBox": "right:-120px;bottom:110px;width:760px",
     "cta": "Swipe"
   },
@@ -45,7 +45,7 @@
       }
     ],
     "cta": "linsetech.com/services",
-    "hero": "../../../public/brand/brand_glass.webp",
+    "hero": "../../../public/brand/brand_glass_v3.webp",
     "heroBox": "right:70px;bottom:150px;width:330px",
     "body": ""
   }

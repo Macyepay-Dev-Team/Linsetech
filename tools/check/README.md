@@ -25,3 +25,8 @@ Set `PW` to a Playwright module path (Chrome channel + WebKit installed), as wit
   WebKit has no frame stream, so its sheets are a screenshot loop: judge timings in Chrome.
 
 Note: if a CSS change does not show in `npm run dev`, restart it — its watcher can stop picking up `globals.css`.
+
+## qa.js and stalls.js (10 Nov 2026 visual QA pass)
+- `qa.js <origin> <outDir> <desktop|phone> <chromium|webkit> <paths…>`: loads each page with the loader skipped, scrolls it with the wheel, saves screenshots and a contact sheet per page, and writes a report of console errors, failed same-origin requests, horizontal overflow and frame stalls. In WebKit the screenshots themselves cause ~60–100 ms gaps, so read its stall counts with that in mind.
+- `stalls.js <url> [webkit]`: no screenshots; scrolls top to bottom and lists every frame over 50 ms with its scrollY and time. Use it to locate jank (e.g. a 3D model compiling its shaders on first sight).
+- Both need Playwright (same setup as the other scripts here) and are run against a production build (`web-prod` on :3100).

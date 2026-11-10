@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "@/i18n/navigation";
 import { gsap, ScrollTrigger, prefersReducedMotion } from "@/lib/gsap";
 import { getLenis } from "@/lib/lenis";
+import { waveArrive, waveTo } from "@/components/sections/work/pixelWave";
 
 /**
  * Sharplink `PageTransition`: a fixed, pointer-transparent curtain (theirs in the page gradient; ours in the loading
@@ -14,6 +15,10 @@ import { getLenis } from "@/lib/lenis";
  * Entering (their `page:finish` / `onAfterEnter`): Lenis is re-enabled, scroll jumps to the top (`immediate`),
  * `ScrollTrigger.refresh()`, then the curtain fades out with the same 0.5s power3.inOut.
  * Their back-to-top reuses the curtain (`curtain()` below): cover → instant scroll → uncover.
+ *
+ * Since 10 Nov 2026 every route change leaves through Puture's pixel wave instead (the owner liked it on the case
+ * pages): the click covers the page with the grid of cells from the click point, the route changes under it, and the
+ * arriving page clears it from the centre (pixelWave.ts). The curtain is kept for back-to-top.
  */
 const FAST = 0.5;
 const EASE = "power3.inOut";
@@ -80,17 +85,12 @@ export default function PageTransition() {
       if (pending.current) return;
       const href = url.pathname + url.search + url.hash;
       pending.current = href;
-      busy = true;
-      getLenis()?.stop();
-      fadeTo(1, () => router.push(href));
-      // never leave the page covered if the route fails to resolve
+      const from = e.detail === 0 ? null : { x: e.clientX, y: e.clientY };
+      // the wave covers from the click point, then pushes the route (it uncovers by itself if the route never mounts)
+      waveTo(href, from, (h) => router.push(h, { scroll: false }));
       window.clearTimeout(watchdog.current);
       watchdog.current = window.setTimeout(() => {
-        if (!pending.current) return;
         pending.current = null;
-        busy = false;
-        getLenis()?.start();
-        fadeTo(0);
       }, WATCHDOG);
     };
     document.addEventListener("click", onClick, true);
@@ -111,16 +111,17 @@ export default function PageTransition() {
       busy = false;
       return;
     }
-    busy = true;
     const id = window.setTimeout(() => {
+      // under the wave: back to the top (unless the link carries an anchor, which the wave jumps to), re-measure,
+      // then let the wave clear (a no-op if the page's own WaveLinks already started it)
       const lenis = getLenis();
       lenis?.start();
-      lenis?.scrollTo(0, { immediate: true, force: true });
-      window.scrollTo(0, 0);
+      if (!window.location.hash) {
+        lenis?.scrollTo(0, { immediate: true, force: true });
+        window.scrollTo(0, 0);
+      }
       ScrollTrigger.refresh();
-      fadeTo(0, () => {
-        busy = false;
-      });
+      waveArrive();
     }, 60);
     return () => window.clearTimeout(id);
   }, [pathname]);

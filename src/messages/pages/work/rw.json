@@ -250,7 +250,30 @@
             "title": "Umuyoboro ugenzurwa",
             "text": "Router n'ibikoresho bya Wi-Fi by'amashami bikurikiranwa ku kibaho kimwe."
           }
-        ]
+        ],
+        "device": {
+          "label": "Imashini ya POS",
+          "title": "Imashini yo kwishyuriraho, igice ku kindi",
+          "text": "Imashini ikozwe mu buryo bw’imiterere ya Linse: ecran yoroshye ku kuguru kumwe kwa chrome kugonze, ecran yo hasi y’umukiriya, n’igice cyo hasi gifite printer n’aho bakoza ikarita cyangwa telefoni bishyura.",
+          "beats": [
+            {
+              "title": "Iteranyijwe kandi itunganyijwe",
+              "text": "Ecran, ukuguru, printer n’igice cyo hasi biteranywa, bigategurwa mbere yo kugera ku ishami."
+            },
+            {
+              "title": "Ecran y’ukora kuri kesi",
+              "text": "Ibicuruzwa, igiteranyo na TVA ubirebera icyarimwe; amafaranga mu ntoki, ikarita cyangwa MoMo."
+            },
+            {
+              "title": "Ecran y’umukiriya",
+              "text": "Ecran yo hasi yereka umukiriya igiteranyo n’ikimenyetso cyo kwishyura na MoMo."
+            },
+            {
+              "title": "Inyemezabuguzi kuri buri gicuruzwa",
+              "text": "Kugurisha birangirana n’inyemezabuguzi icapwe."
+            }
+          ]
+        }
       }
     }
   }

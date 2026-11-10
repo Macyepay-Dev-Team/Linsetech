@@ -51,7 +51,7 @@ export const typeScale = [
 
 export const materials = [
   { id: "chrome", image: "/brand/brand_chrome.webp" },
-  { id: "glass", image: "/brand/brand_glass.webp" },
+  { id: "glass", image: "/brand/brand_glass_v3.webp" },
 ] as const;
 
 /** The square unit in six versions (Checkmarx-style module). */

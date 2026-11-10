@@ -36,7 +36,7 @@
         },
         "glass": {
           "title": "Ikirahure",
-          "text": "Ikirahure kitabonerana neza cyangwa kibonerana, gifite urumuri rw’icyatsi, kigaragaza porogaramu: zisobanutse kandi zinoze."
+          "text": "Ikirahure kibonerana, gifite urumuri rw’icyatsi, kigaragaza porogaramu: zisobanutse kandi zinoze."
         }
       },
       "together": "Iyo bihujwe biba igikoresho: umubiri w’icyuma na ecran y’ikirahure. Buri shusho nyamukuru ikoresha kimwe muri byo cyangwa byombi."
@@ -130,7 +130,7 @@
         },
         "glass": {
           "title": "Ikirahure",
-          "text": "Kitabonerana neza cyangwa kibonerana, kibyibushye, gifite impande zikase zihengamye zifata urumuri rw’umweru woroheje, n’urumuri ruke rw’icyatsi imbere. Gikoreshwa kuri porogaramu, amakuru n’amakarita."
+          "text": "Kibonerana kandi kibyibushye, ntigihishe ibiri inyuma yacyo: gifite impande zikase zihengamye zifata urumuri rw’umweru woroheje, n’urumuri ruke rw’icyatsi rugaragara inyuma yacyo. Gikoreshwa kuri porogaramu, amakuru n’amakarita."
         }
       },
       "combined": "Bihujwe: ikadire ya chrome ifashe ikirahure, nk’uko igikoresho gifata ecran yacyo.",

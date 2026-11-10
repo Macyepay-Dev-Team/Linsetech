@@ -259,6 +259,67 @@ def mat_clear_glass(name="clearGlass"):
     return m
 
 
+def mat_clear(name="clear", tint="#FFFFFF", alpha_min=0.05, alpha_max=0.92, rim="#86EFAC", rim_strength=0.7, blend=0.22):
+    """Clear glass for transparent renders (the brand's glass since 10 Nov 2026: clear, not frosted): a glossy coated
+    surface whose opacity follows the Fresnel term (almost invisible face-on, bright at the edges), with a faint green
+    rim at grazing angles. BLENDED with overlap, so the back faces of thick glass show through; composites cleanly
+    over any page background."""
+    m, nt, pb, out = _new_mat(name)
+    setin(pb, "Base Color", hex2lin(tint))
+    setin(pb, "Metallic", 0.0)
+    setin(pb, "Roughness", 0.015)
+    setin(pb, "IOR", 1.5)
+    setin(pb, "Coat Weight", 1.0)
+    setin(pb, "Coat Roughness", 0.01)
+    setin(pb, "Specular IOR Level", 1.0)
+    lw = nt.nodes.new("ShaderNodeLayerWeight")
+    lw.inputs["Blend"].default_value = blend
+    mr = nt.nodes.new("ShaderNodeMapRange")
+    mr.inputs["To Min"].default_value = alpha_min
+    mr.inputs["To Max"].default_value = alpha_max
+    nt.links.new(lw.outputs["Fresnel"], mr.inputs["Value"])
+    nt.links.new(mr.outputs["Result"], pb.inputs["Alpha"])
+    ramp = nt.nodes.new("ShaderNodeValToRGB")
+    ramp.color_ramp.elements[0].position = 0.55
+    ramp.color_ramp.elements[0].color = (0, 0, 0, 1)
+    ramp.color_ramp.elements[1].color = hex2lin(rim)
+    nt.links.new(lw.outputs["Facing"], ramp.inputs["Fac"])
+    nt.links.new(ramp.outputs["Color"], pb.inputs["Emission Color"])
+    setin(pb, "Emission Strength", rim_strength)
+    m.surface_render_method = "BLENDED"
+    m.use_backface_culling = False
+    for attr in ("use_transparency_overlap", "show_transparent_back"):
+        if hasattr(m, attr):
+            setattr(m, attr, True)
+    return m
+
+
+def mat_soft_glow(name="softGlow", color="#22C55E", strength=2.0):
+    """A soft round glow for a plane: emission and alpha fall off from the centre (UV-less, object coordinates)."""
+    m, nt, pb, out = _new_mat(name)
+    tc = nt.nodes.new("ShaderNodeTexCoord")
+    grad = nt.nodes.new("ShaderNodeTexGradient")
+    grad.gradient_type = "SPHERICAL"
+    nt.links.new(tc.outputs["Object"], grad.inputs["Vector"])
+    em = nt.nodes.new("ShaderNodeEmission")
+    em.inputs["Color"].default_value = hex2lin(color)
+    em.inputs["Strength"].default_value = strength
+    tr = nt.nodes.new("ShaderNodeBsdfTransparent")
+    mix = nt.nodes.new("ShaderNodeMixShader")
+    pw = nt.nodes.new("ShaderNodeMath")
+    pw.operation = "POWER"
+    pw.inputs[1].default_value = 1.8
+    nt.links.new(grad.outputs["Fac"], pw.inputs[0])
+    nt.links.new(pw.outputs[0], mix.inputs["Fac"])
+    nt.links.new(tr.outputs[0], mix.inputs[1])
+    nt.links.new(em.outputs[0], mix.inputs[2])
+    for l in list(out.inputs["Surface"].links):
+        nt.links.remove(l)
+    nt.links.new(mix.outputs[0], out.inputs["Surface"])
+    m.surface_render_method = "BLENDED"
+    return m
+
+
 def mat_ribbon(name="ribbon", image=None, levels=16):
     """Terraced field: metallic dark green sheets. The same height map that displaces the plane drives the
     colour: flat sheet tops, a dark gap on the cliff, a pale lip on the top edge; falls to the dark horizon with distance."""

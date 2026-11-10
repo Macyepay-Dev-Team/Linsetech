@@ -9,6 +9,8 @@ export const clips = {
   stack: { enabled: true, webm: "/clips/stack_chrome.webm", mp4: "/clips/stack_safari.mp4", poster: "/clips/stack_poster.webp", hold: "/clips/stack_hold.webp" },
   // Sharplink's opportunity clip recreated (tools/blender/opportunity.py): an 8.7 s seamless loop beside the services list
   opportunity: { enabled: true, webm: "/clips/opportunity_chrome.webm", mp4: "/clips/opportunity_safari.mp4", poster: "/clips/opportunity_poster.webp" },
+  // the Linse POS terminal assembling, checking out and printing (tools/blender/pos.py ANIM=1), scrubbed on the retail case
+  posTill: { enabled: true, webm: "/clips/pos_till_chrome.webm", mp4: "/clips/pos_till_safari.mp4", poster: "/clips/pos_till_poster.webp" },
 };
 
 export type Clip = { webm: string; mp4: string; poster?: string };

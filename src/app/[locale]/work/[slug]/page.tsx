@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { projects as localProjects } from "@/content/work";
+import { clips } from "@/content/clips";
+import DeviceScrub from "@/components/sections/work/DeviceScrub";
 import { getProjects, getProject } from "@/sanity/data";
 import StatTiles from "@/components/sections/pages/StatTiles";
 import { ChapterLabel } from "@/components/sections/WorkChapter";
@@ -186,6 +188,9 @@ export default async function ProjectPage({ params }: Props) {
           </div>
         </section>
 
+        {/* the device in 3D, scrubbed by scroll (only cases that have one) */}
+        {p.device && clips[p.device.clip].enabled && <DeviceScrub clip={clips[p.device.clip]} label={p.device.label} title={p.device.title} text={p.device.text} beats={p.device.beats} marks={p.device.marks} />}
+
         {/* 01 screens: the device pinned mid-screen while the captions scroll past it */}
         <section data-theme="dark" className={SECTION}>
           <div className={`${WRAP} grid gap-[clamp(32px,5vh,56px)]`}>
@@ -261,7 +266,10 @@ export default async function ProjectPage({ params }: Props) {
               label={tc("more")}
               comingSoon={tc("comingSoon")}
               cards={[
-                { dir: "previous", href: `/work/${prev.slug}`, label: tc("previous"), meta: `${String(projects.indexOf(prev) + 1).padStart(2, "0")} · ${prev.client}`, name: prev.title, project: prev },
+                // with two projects the previous one is also the next one: lead back to the archive instead of repeating it
+                next && next.slug === prev.slug
+                  ? { dir: "previous", href: "/work", label: tc("archiveName"), meta: tc("archiveMeta"), name: tc("archiveName"), section: tc("archiveName") }
+                  : { dir: "previous", href: `/work/${prev.slug}`, label: tc("previous"), meta: `${String(projects.indexOf(prev) + 1).padStart(2, "0")} · ${prev.client}`, name: prev.title, project: prev },
                 next
                   ? { dir: "next", href: `/work/${next.slug}`, label: tc("next"), meta: `${String(i + 2).padStart(2, "0")} · ${next.client}`, name: next.title, project: next }
                   : { dir: "next", href: "/#process", label: tc("nextSection"), meta: `${CHAPTER_INDEX.process} · ${tp("eyebrow")}`, name: tp("title"), section: tp("eyebrow") },
