@@ -1,0 +1,172 @@
+name: Linsetech CI/CD
+
+# develop -> immutable dev image -> auto-merged GitOps update
+# main    -> immutable production image -> GitOps PR requiring review
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+concurrency:
+  group: linsetech-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE: ghcr.io/macyepay/linsetech
+  GITOPS_REPO: Macyepay-Dev-Team/macyepay-dev-gitops
+
+jobs:
+  security-scan:
+    name: PolinRider malware scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Block known PolinRider indicators
+        run: |
+          indicator_regex='A8-3971''-6|0xa322E5f3D311D3080e6f0121063e9aDC2490''Ef1a|BLOCK_MULTIPLE=1000''n'
+          if grep -RIlE --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=.next \
+            "$indicator_regex" .; then
+            echo "PolinRider indicator detected; refusing to build or deploy."
+            exit 1
+          fi
+
+  build:
+    name: Build and push Linsetech
+    needs: security-scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ secrets.GHCR_USERNAME || github.actor }}
+          password: ${{ secrets.GHCR_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Build and push dev image
+        if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          platforms: linux/amd64
+          tags: |
+            ${{ env.IMAGE }}:dev-latest
+            ${{ env.IMAGE }}:dev-${{ github.sha }}
+          cache-from: type=gha,scope=linsetech-dev
+          cache-to: type=gha,mode=max,scope=linsetech-dev
+          build-args: |
+            NEXT_PUBLIC_SITE_URL=${{ secrets.DEV_NEXT_PUBLIC_SITE_URL }}
+            NEXT_PUBLIC_SANITY_PROJECT_ID=${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
+            NEXT_PUBLIC_SANITY_DATASET=${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
+            NEXT_PUBLIC_SANITY_API_VERSION=${{ secrets.NEXT_PUBLIC_SANITY_API_VERSION }}
+
+      - name: Build and push production image
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          platforms: linux/amd64
+          tags: |
+            ${{ env.IMAGE }}:latest
+            ${{ env.IMAGE }}:${{ github.sha }}
+          cache-from: type=gha,scope=linsetech-prod
+          cache-to: type=gha,mode=max,scope=linsetech-prod
+          build-args: |
+            NEXT_PUBLIC_SITE_URL=${{ secrets.NEXT_PUBLIC_SITE_URL }}
+            NEXT_PUBLIC_SANITY_PROJECT_ID=${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
+            NEXT_PUBLIC_SANITY_DATASET=${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
+            NEXT_PUBLIC_SANITY_API_VERSION=${{ secrets.NEXT_PUBLIC_SANITY_API_VERSION }}
+
+      - name: Build pull request image
+        if: github.event_name == 'pull_request'
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile
+          push: false
+          platforms: linux/amd64
+          cache-from: type=gha,scope=${{ github.base_ref }}-linsetech
+
+  update-gitops-dev:
+    name: GitOps update -> dev (auto-merge)
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+    env:
+      GITOPS_BRANCH: update/dev-linsetech-${{ github.sha }}-${{ github.run_id }}
+    steps:
+      - name: Checkout GitOps repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.GITOPS_REPO }}
+          token: ${{ secrets.GHCR_TOKEN }}
+          path: gitops
+
+      - name: Update and auto-merge dev deployment
+        working-directory: gitops
+        env:
+          GH_TOKEN: ${{ secrets.GHCR_TOKEN }}
+        run: |
+          overlay=apps/overlays/dev/linsetech/kustomization.yaml
+          test -f "$overlay" || { echo "Missing $overlay"; exit 1; }
+          sed -i 's|newTag: .*|newTag: "dev-${{ github.sha }}"|' "$overlay"
+          git diff --check
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git checkout -b "$GITOPS_BRANCH"
+          git add "$overlay"
+          git commit -m "chore(dev): deploy Linsetech develop@${GITHUB_SHA:0:8}"
+          git push origin "$GITOPS_BRANCH"
+          pr=$(gh pr create --repo "$GITOPS_REPO" --head "$GITOPS_BRANCH" --base main \
+            --title "chore(dev): deploy Linsetech develop@${GITHUB_SHA:0:8}" \
+            --body "Automated Linsetech deployment to macyepay-dev using image dev-${{ github.sha }}.")
+          gh pr merge "$pr" --repo "$GITOPS_REPO" --merge --delete-branch
+
+  update-gitops-prod:
+    name: GitOps PR -> prod (requires approval)
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      GITOPS_BRANCH: update/prod-linsetech-${{ github.sha }}-${{ github.run_id }}
+    steps:
+      - name: Checkout GitOps repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.GITOPS_REPO }}
+          token: ${{ secrets.GHCR_TOKEN }}
+          path: gitops
+
+      - name: Open production GitOps PR
+        working-directory: gitops
+        env:
+          GH_TOKEN: ${{ secrets.GHCR_TOKEN }}
+        run: |
+          overlay=apps/overlays/prod/linsetech/kustomization.yaml
+          test -f "$overlay" || { echo "Missing $overlay"; exit 1; }
+          sed -i 's|newTag: .*|newTag: "${{ github.sha }}"|' "$overlay"
+          git diff --check
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git checkout -b "$GITOPS_BRANCH"
+          git add "$overlay"
+          git commit -m "chore(prod): promote Linsetech main@${GITHUB_SHA:0:8}"
+          git push origin "$GITOPS_BRANCH"
+          gh pr create --repo "$GITOPS_REPO" --head "$GITOPS_BRANCH" --base main \
+            --title "chore(prod): promote Linsetech main@${GITHUB_SHA:0:8}" \
+            --body "Production Linsetech deployment. Review and merge after validation. Image: ${{ env.IMAGE }}:${{ github.sha }}"
